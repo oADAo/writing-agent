@@ -4,14 +4,15 @@
 
 ## 目標
 
-把內容工作拆成四個獨立但可串接的能力：
+把內容工作拆成五個獨立但可串接的能力：
 
-1. 熱門主題研究
+1. 長影片熱門主題研究
 2. 高流量標題發想
 3. 文案撰寫
 4. Shorts 文本撰寫
+5. 熱門 Shorts 主題研究
 
-這四步是分開執行的，不自動連續串步。
+這五步是分開執行的，不自動連續串步。
 主入口是自然語言；如果需求已經很明顯，就直接判斷對應模式執行。
 只有在需求混合或模糊時，才回頭補問。
 
@@ -47,6 +48,30 @@
   - `Cross-Source Validation`
   - `Chinese Audience Fit`
   - `5 Topic Options`
+  - `Top 1 Recommendation`
+  - `Why Now`
+  - `Risks / Unknowns`
+
+### 5. Shorts 主題研究
+
+- 先讀 `docs/profiles/may-story/shorts_topic_research_rules.md`
+- 先確認找的是 `真正的 Shorts`，`YouTube` 只認 `/shorts/`
+- 先整理遊戲名翻譯表：`中文 / 日文 / 英文` 與常見別名
+- 各語圈要用自己的原生關鍵字分開搜，而且 `一題一搜`
+- 主證據優先看 `小型自媒體 / 個人創作者 / 非官方搬運解析`
+- 官方與大型媒體只拿來做事實校正
+- 每個語圈先抓 `10 到 20 支` 候選，再分成 `主題簇`
+- 先排除 `假熱門`，只留下 `可複製熱門`
+- 正式成品寫到 `workspace/deliverables/shorts-topic/`
+- 輸出應該包含：
+  - `Inputs`
+  - `Query Log`
+  - `Platform Signals`
+  - `Comment / Community Signals`
+  - `Cross-Language Shorts Hits`
+  - `Cross-Platform Validation`
+  - `Chinese Audience Fit`
+  - `5 Shorts Topic Options`
   - `Top 1 Recommendation`
   - `Why Now`
   - `Risks / Unknowns`
@@ -90,7 +115,8 @@
 - 正式成品寫到 `workspace/deliverables/shorts/`
 - 輸出應該包含：
   - `Hook Title`
-  - `Final Short Script`
+  - `Hook Burst Text`
+  - `Template Marked Script`
 
 ## 建議交付格式
 
@@ -142,5 +168,24 @@
 # Shorts Package
 
 ## Hook Title
-## Final Short Script
+## Hook Burst Text
+## Template Marked Script
+```
+
+### Shorts 主題研究階段
+
+```md
+# Shorts Topic Pack
+
+## Inputs
+## Query Log
+## Platform Signals
+## Comment / Community Signals
+## Cross-Language Shorts Hits
+## Cross-Platform Validation
+## Chinese Audience Fit
+## 5 Shorts Topic Options
+## Top 1 Recommendation
+## Why Now
+## Risks / Unknowns
 ```

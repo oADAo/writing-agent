@@ -2,4 +2,6 @@
 
 ## Hook Title
 
-## Final Short Script
+## Hook Burst Text
+
+## Template Marked Script

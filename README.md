@@ -2,22 +2,25 @@
 
 這個 repo 現在是 `玫玫物語` 專用的對話驅動工作台。
 
-你不需要記 CLI。主入口就是自然語言：直接告訴我你要找題目、想標題、寫長影片腳本，或寫 Shorts，我會按 repo 規則執行、查證、落檔，並盡量把可回用記憶保留下來。
+你不需要記 CLI。主入口就是自然語言：直接告訴我你要找長影片題目、找熱門 Shorts 題目、想標題、寫長影片腳本，或寫 Shorts，我會按 repo 規則執行、查證、落檔，並盡量把可回用記憶保留下來。
 
-目前這個 repo 只處理四種內容工作：
+目前這個 repo 只處理五種內容工作：
 
-- 搜尋熱門主題
+- 搜尋長影片熱門主題
 - 想高流量標題與封面方向
 - 撰寫長影片腳本
 - 撰寫 Shorts 文本
+- 搜尋熱門 Shorts 主題
 
-不處理影音 pipeline、字幕切軸、章節、overlay、Google Drive、ffmpeg、Shorts 剪輯、社群貼文或封面生圖流程。那些能力仍留在原本的 [studio-tools](/Users/may/Documents/studio-tools) 或其他工具。
+不處理影音 pipeline、字幕切軸、Google Drive、ffmpeg、Shorts 剪輯、社群貼文或封面生圖流程。那些能力仍留在原本的 [studio-tools](/Users/may/Documents/studio-tools) 或其他工具。
+但 `Shorts 文本撰寫` 會把文字先拆成 `HOOK 爆字 / 前言穩字 / 步驟提示卡 / 教學穩字` 這四種 overlay 分類，方便後續剪輯使用。
 
 ## 怎麼用
 
 直接用自然語言下需求：
 
 - `幫我找這款遊戲最近能做的熱門題目`
+- `幫我找這款遊戲最近能做的熱門 Shorts 題目`
 - `這個題目幫我想高點擊標題和封面文案`
 - `這個題目直接幫我出長影片腳本`
 - `把這個題目寫成一篇 Shorts 口播稿`
@@ -31,12 +34,14 @@
 
 - `熱門主題搜尋`
   會依 `AGENTS.md` 與 `topic_research_rules.md` 查中文、日文、英文三語圈，並要求 `YouTube + 站外來源` 交叉驗證。
+- `熱門 Shorts 主題搜尋`
+  會依 `shorts_topic_research_rules.md` 固定查 `YouTube Shorts / TikTok / IG Reels / 巴哈姆特 / bilibili`，只把 `/shorts/` 視為真正的 YouTube Shorts，並優先採用 `小型自媒體 / 個人創作者 / 非官方搬運解析` 當主證據。
 - `高流量標題與封面方向`
   會輸出 `Title Pack`，包含標題候選、封面文案與構圖方向。
 - `長影片腳本撰寫`
   會依 `content_rules.md`、`voice_memory.md` 與 `script_template.md` 產出 `Script Package`。
 - `Shorts 文本撰寫`
-  會依 `shorts_rules.md` 產出 `Shorts Package`。
+  會依 `shorts_rules.md` 產出 `Shorts Package`，並把文案拆成固定的字幕版型分類。
 - `內部驗證工具`
   可以檢查文件格式一致性、deliverable 結構與 topic memory 完整性。
 
@@ -45,6 +50,7 @@
 正式成品寫到：
 
 - `workspace/deliverables/topic/`
+- `workspace/deliverables/shorts-topic/`
 - `workspace/deliverables/title/`
 - `workspace/deliverables/script/`
 - `workspace/deliverables/shorts/`
@@ -120,6 +126,24 @@ script-writing-agent/
 ## Risks / Unknowns
 ```
 
+### Shorts 主題研究
+
+```md
+# Shorts Topic Pack
+
+## Inputs
+## Query Log
+## Platform Signals
+## Comment / Community Signals
+## Cross-Language Shorts Hits
+## Cross-Platform Validation
+## Chinese Audience Fit
+## 5 Shorts Topic Options
+## Top 1 Recommendation
+## Why Now
+## Risks / Unknowns
+```
+
 ### 標題與封面方向
 
 ```md
@@ -150,11 +174,13 @@ script-writing-agent/
 # Shorts Package
 
 ## Hook Title
-## Final Short Script
+## Hook Burst Text
+## Template Marked Script
 ```
 
 ## 可手動跑的檢查工具
 
 - `python3 scripts/check_docs_consistency.py`
 - `python3 scripts/check_deliverable_shape.py <deliverable.md> --mode topic`
+- `python3 scripts/check_deliverable_shape.py <deliverable.md> --mode shorts-topic`
 - `python3 scripts/check_memory_completeness.py <topic-run-dir>`

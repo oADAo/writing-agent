@@ -7,11 +7,12 @@
 ## 服務範圍
 
 - 只處理 `PC / Switch / PS5` 這類主機與單機買斷制遊戲。
-- 只支援四種分步工作模式：
-  1. 熱門主題搜尋
+- 只支援五種分步工作模式：
+  1. 長影片熱門主題搜尋
   2. 高流量標題與封面方向
   3. 長影片腳本撰寫
   4. Shorts 文本撰寫
+  5. 熱門 Shorts 主題搜尋
 - 所有輸出一律使用繁體中文。
 
 如果使用者沒有明確指定目前要做哪一步，但意圖已經很明顯，就直接判斷對應模式執行。
@@ -20,6 +21,7 @@
 - `只做標題與封面方向`
 - `只寫長影片腳本`
 - `只寫 Shorts 文本`
+- `只找 Shorts 題目`
 
 不要擅自從主題研究跳到標題，也不要從標題直接跳到完整腳本。
 
@@ -62,9 +64,10 @@
 - 單次任務的工作記憶預設寫到 `workspace/memory/runs/<timestamp>-<mode>-<slug>/`。
 - 可長期回用的遊戲記憶預設整理到 `workspace/memory/games/<slug>/`。
 - `熱門主題搜尋` 至少要留下查詢平台、原生關鍵字、代表來源、是否納入主結論。
+- `熱門 Shorts 主題搜尋` 至少要留下真正的 Shorts 證據、原文標題、中文翻譯、連結、觀看數快照、主題簇與可複製判斷。
 - 如果這次任務有明確更新到某款遊戲的可重用判斷，應同步更新該遊戲的 memory。
 
-## 模式 1：熱門主題搜尋
+## 模式 1：長影片熱門主題搜尋
 
 先讀：
 - `docs/profiles/may-story/channel_scope.md`
@@ -108,6 +111,85 @@
 - 不要把 `秒數短` 直接當成 `Shorts 題型有效` 的證據。
 - 不要把不屬於頻道邊界的熱門遊戲硬塞進來。
 - 不要把很多相近題目偽裝成不同方向。
+
+## 模式 5：熱門 Shorts 主題搜尋
+
+先讀：
+- `docs/profiles/may-story/channel_scope.md`
+- `docs/profiles/may-story/shorts_topic_research_rules.md`
+- `prompts/shorts-topic-research.md`
+
+### 這一步要做什麼
+
+- 找出最近值得切入的 `Shorts` 題型與題目。
+- 這一步只研究短影音內容，不和長影片主題研究混用。
+- 固定比對 `中文 / 日文 / 英文` 三個語圈。
+- 固定查 `YouTube Shorts / TikTok / IG Reels / 巴哈姆特 / bilibili` 五個主平台。
+- 主證據優先看 `小型自媒體 / 個人創作者 / 非官方搬運解析`。
+- 官方、Nintendo、Capcom、The Pokémon Company、大型媒體只留作 `事實校正`，不能當主證據。
+- 先把候選片整理成 `主題簇`，再判斷哪種 Shorts 題型真的反覆出現。
+- 每個候選方向都要附可直接接到寫稿步驟的題目包，不只是研究結論。
+
+### 這一步一定要交付什麼
+
+```md
+# Shorts Topic Pack
+
+## Inputs
+## Query Log
+## Platform Signals
+## Comment / Community Signals
+## Cross-Language Shorts Hits
+## Cross-Platform Validation
+## Chinese Audience Fit
+## 5 Shorts Topic Options
+## Top 1 Recommendation
+## Why Now
+## Risks / Unknowns
+```
+
+### 這一步的搜尋硬規則
+
+- 先確認找的是 `真正的 YouTube Shorts`，只認 `/shorts/` 連結。
+- 不要把一般影片、切片、只是秒數短的片混進來。
+- 每款遊戲先做 `中文名 / 日文名 / 英文名` 翻譯表；有簡稱、舊譯名、玩家暱稱也要列。
+- 三個語圈要用各自常用關鍵字分開搜，不准只拿中文或英文硬翻。
+- 每次查詢以 `一題一搜` 為原則，例如 `遊戲名 + hidden + shorts`。
+- 每個語圈先拉 `10 到 20 支` 有量候選，再分成 `主題簇`。
+- 固定記下：
+  - 原文標題
+  - 中文翻譯
+  - 連結
+  - 觀看數快照
+  - 發片時間
+  - 所屬主題簇
+  - 為什麼值得抄
+  - 這題是不是可複製熱門
+
+### 這一步怎樣才算真正熱門
+
+- 不是看單支片，而是看 `題型可複製性`。
+- 只有符合大部分條件，才算可複製熱門：
+  - 不同創作者都做過
+  - 不同語言圈也有人做
+  - 標題一看就懂
+  - 畫面一眼就懂
+  - 不靠創作者本人也成立
+- 還要再用這 `5 個標準` 判斷值不值得做：
+  - 這題 `3 秒內` 看得懂嗎
+  - 有明確結果嗎
+  - 有反差嗎
+  - 畫面有記憶點嗎
+  - 其他人做也有機會跑嗎
+
+### 這一步禁止什麼
+
+- 不要把官方片、新聞通稿題、大媒體整理片直接當可抄主題。
+- 不要把 VTuber、實況主、靠人格魅力撐起來的片直接當題型。
+- 不要說 `這支紅，所以這主題能做`，要先回到主題簇與可複製性。
+- 不要只看單語圈。
+- 不要只看標題，不看畫面記憶點與留言共鳴。
+- 不要把特例爆片直接推成 `Top 1 Recommendation`。
 
 ## 模式 2：高流量標題與封面方向
 
@@ -181,6 +263,7 @@
 先讀：
 - `docs/profiles/may-story/channel_scope.md`
 - `docs/profiles/may-story/voice_memory.md`
+- `docs/profiles/may-story/universal_video_template.md`
 - `docs/profiles/may-story/shorts_rules.md`
 - `prompts/shorts-writing.md`
 
@@ -189,6 +272,7 @@
 - 只寫遊戲相關的 Shorts 口播文本。
 - 保留 `玫玫物語` 的文案味道，但節奏更快、更狠、更情緒。
 - 每支只打一個最值得講的 punch。
+- 正式成品不是只交一整篇稿，還要先分成固定的字幕版型分類。
 - 如果要找 Shorts 題型或參考，優先直接看 `真正有流量的 Shorts`。
 - 只有當這款遊戲的 Shorts 樣本太少時，才回頭用一般內容市場補驗證。
 - 如果列外文 Shorts 參考，一定要附中文翻譯。
@@ -198,6 +282,28 @@
 - 留言內容要內化進文稿，不要生硬寫成 `有人說` 或 `留言區覺得`。
 - 第一行要先大量參考爆紅 Shorts 的開頭寫法，因為這是最重要的句子。
 - 在講有趣、荒謬、穿幫這類 punch 時，不要用 `不是...而是...` 當主要句型。
+- 字幕版型固定分成：
+  - `HOOK 爆字`
+  - `前言穩字`
+  - `步驟提示卡`
+  - `教學穩字`
+- `HOOK 爆字` 要短、狠、單行，像畫面第一拳。
+- `前言穩字` 是前兩句講完後的補充前言，用來穩住主 promise。
+- `步驟提示卡` 只放很短的步驟主題，不要寫成長標題。
+- `教學穩字` 要預設維持單行字量；如果太長，就改寫或拆成下一張，不要硬擠兩行。
+- 正式交付時，只交這三段：
+  - `Hook Title`
+  - `Hook Burst Text`
+  - `Template Marked Script`
+- `Template Marked Script` 固定直接標：
+  - `[hook]`
+  - `[intro]`
+  - `[chapter] 第一步 ...`
+  - `[ending]`
+- `[chapter]` 後面不要寫 `第一章` 這種不能直接念的標籤。
+- 如果要標後製重點字，預設用 `「」`。
+- 重點字只標 `intro` 和章節正文，不標 `hook`，也不標 `[chapter]` 那一行本身。
+- 一次只標幾個真正重要的名詞，不要整句都標。
 
 ### 這一步一定要交付什麼
 
@@ -205,16 +311,20 @@
 # Shorts Package
 
 ## Hook Title
-## Final Short Script
+## Hook Burst Text
+## Template Marked Script
 ```
 
 ### 這一步禁止什麼
 
 - 不要寫成長影片濃縮版。
-- 不要加章節名。
+- 不要加長影片式章節名。
 - 不要塞太多背景知識。
 - 不要只剩情緒沒有資訊支撐。
 - 不要把普通短片或只是秒數短的影片，硬當成 Shorts 參考。
+- 不要讓 `HOOK 爆字` 和 `教學穩字` 寫成同一種長句。
+- 不要把 `教學穩字` 硬擠成兩行。
+- 不要多交 `Intro Overlay Text`、`Step Cards`、`Teaching Subtitle Lines`、`Final Short Script` 這些舊欄位。
 
 ## 推薦使用方式
 
@@ -229,3 +339,6 @@
 
 ### 只寫 Shorts 文本
 `把這個題目寫成一篇 Shorts 口播稿`
+
+### 只找 Shorts 題目
+`幫我找這款遊戲最近能做的熱門 Shorts 題目`

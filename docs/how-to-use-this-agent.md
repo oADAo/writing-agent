@@ -6,7 +6,8 @@
 
 ## 可用功能
 
-- `熱門主題搜尋`
+- `長影片熱門主題搜尋`
+- `熱門 Shorts 主題搜尋`
 - `高流量標題與封面方向`
 - `長影片腳本撰寫`
 - `Shorts 文本撰寫`
@@ -14,9 +15,11 @@
 ## 自然語言下法
 
 - `幫我找這款遊戲最近能做的熱門題目`
+- `幫我找這款遊戲最近能做的熱門 Shorts 題目`
 - `這個題目幫我想高點擊標題和封面文案`
 - `這個題目直接幫我出長影片腳本`
 - `把這個題目寫成一篇 Shorts 口播稿`
+- `把這個題目寫成一篇 Shorts 口播稿，並幫我拆成 HOOK 爆字 / 前言穩字 / 步驟提示卡 / 教學穩字`
 
 如果一句話明顯屬於其中一步，我會直接執行。
 如果一句話同時混了兩步以上，或缺少關鍵前提，我才會補問。
@@ -26,9 +29,16 @@
 正式成品寫到：
 
 - `workspace/deliverables/topic/`
+- `workspace/deliverables/shorts-topic/`
 - `workspace/deliverables/title/`
 - `workspace/deliverables/script/`
 - `workspace/deliverables/shorts/`
+
+其中 `Shorts 文本撰寫` 的成品，現在會預設拆成：
+
+- `Hook Title`
+- `Hook Burst Text`
+- `Template Marked Script`
 
 ## 工作記憶會寫去哪裡
 

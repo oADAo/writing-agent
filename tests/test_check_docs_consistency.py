@@ -70,6 +70,64 @@ class CheckDocsConsistencyTests(unittest.TestCase):
 
             self.assertEqual(failures, [])
 
+    def test_reports_missing_shorts_topic_sections(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            malformed = self.write_file(
+                root,
+                "README.md",
+                """# README
+
+```md
+# Shorts Topic Pack
+## Inputs
+## Query Log
+## Platform Signals
+## Comment / Community Signals
+## Cross-Platform Validation
+## Chinese Audience Fit
+## 5 Shorts Topic Options
+## Top 1 Recommendation
+## Why Now
+## Risks / Unknowns
+```
+""",
+            )
+
+            failures = check_files([malformed])
+
+            self.assertEqual(len(failures), 1)
+            self.assertIn("Cross-Language Shorts Hits", failures[0])
+
+    def test_accepts_well_formed_shorts_topic_sections(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            well_formed = self.write_file(
+                root,
+                "README.md",
+                """# README
+
+```md
+# Shorts Topic Pack
+## Inputs
+## Query Log
+## Platform Signals
+## Comment / Community Signals
+## Cross-Language Shorts Hits
+## Cross-Platform Validation
+## Chinese Audience Fit
+## 5 Shorts Topic Options
+## Top 1 Recommendation
+## Why Now
+## Risks / Unknowns
+```
+""",
+            )
+
+            failures = check_files([well_formed])
+
+            self.assertEqual(failures, [])
+
 
 if __name__ == "__main__":
     unittest.main()

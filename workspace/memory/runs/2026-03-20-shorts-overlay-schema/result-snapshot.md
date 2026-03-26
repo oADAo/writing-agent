@@ -1,0 +1,28 @@
+# Result Snapshot
+
+- 已把 `Shorts 文本撰寫` 的固定輸出格式從單篇短稿，升級成帶有字幕版型分類的 `Shorts Package`
+- 這份記錄已被後續的精簡版輸出格式取代，不能再拿來當目前規格。
+- 新的固定欄位：
+  - `Hook Title`
+  - `Hook Burst Text`
+  - `Intro Overlay Text`
+  - `Step Cards`
+  - `Teaching Subtitle Lines`
+  - `Final Short Script`
+- 目前正式沿用的版本改成只交：
+  - `Hook Title`
+  - `Hook Burst Text`
+  - `Template Marked Script`
+- 已同步更新：
+  - `AGENTS.md`
+  - `docs/profiles/may-story/shorts_rules.md`
+  - `prompts/shorts-writing.md`
+  - `templates/deliverables/shorts-package.md`
+  - `README.md`
+  - `docs/how-to-use-this-agent.md`
+  - `docs/workflows/content-production.md`
+  - `examples/output-outline.md`
+  - `scripts/check_docs_consistency.py`
+  - `scripts/check_deliverable_shape.py`
+  - `tests/test_check_deliverable_shape.py`
+- 既有 `POKOPIA` Shorts deliverable 也已改成新格式，作為第一個實例。

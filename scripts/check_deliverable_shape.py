@@ -41,7 +41,27 @@ REQUIRED_HEADINGS = {
     },
     "shorts": {
         "title": "Shorts Package",
-        "sections": ["Hook Title", "Final Short Script"],
+        "sections": [
+            "Hook Title",
+            "Hook Burst Text",
+            "Template Marked Script",
+        ],
+    },
+    "shorts-topic": {
+        "title": "Shorts Topic Pack",
+        "sections": [
+            "Inputs",
+            "Query Log",
+            "Platform Signals",
+            "Comment / Community Signals",
+            "Cross-Language Shorts Hits",
+            "Cross-Platform Validation",
+            "Chinese Audience Fit",
+            "5 Shorts Topic Options",
+            "Top 1 Recommendation",
+            "Why Now",
+            "Risks / Unknowns",
+        ],
     },
 }
 

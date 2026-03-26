@@ -36,7 +36,21 @@ EXPECTED_PACKAGES = {
     ],
     "Shorts Package": [
         "Hook Title",
-        "Final Short Script",
+        "Hook Burst Text",
+        "Template Marked Script",
+    ],
+    "Shorts Topic Pack": [
+        "Inputs",
+        "Query Log",
+        "Platform Signals",
+        "Comment / Community Signals",
+        "Cross-Language Shorts Hits",
+        "Cross-Platform Validation",
+        "Chinese Audience Fit",
+        "5 Shorts Topic Options",
+        "Top 1 Recommendation",
+        "Why Now",
+        "Risks / Unknowns",
     ],
 }
 
@@ -46,6 +60,7 @@ DEFAULT_PATHS = [
     Path("docs/workflows/content-production.md"),
     Path("examples/output-outline.md"),
     Path("prompts/topic-research.md"),
+    Path("prompts/shorts-topic-research.md"),
     Path("prompts/title-ideation.md"),
     Path("prompts/script-writing.md"),
     Path("prompts/shorts-writing.md"),
