@@ -1,13 +1,29 @@
 # Source Index
 
 ## Source 1
-- 類型：
-- 連結：
-- 摘要：
-- 用途：
+- Source name:
+- URL:
+- Source type:
+- Evidence family:
+- Evidence level:
+- Search tier:
+- Capture status:
+- Evidence file:
+- Actual text read:
+- Supports:
+- Included in conclusion?:
+- Why keep it?:
 
 ## Source 2
-- 類型：
-- 連結：
-- 摘要：
-- 用途：
+- Source name:
+- URL:
+- Source type:
+- Evidence family:
+- Evidence level:
+- Search tier:
+- Capture status:
+- Evidence file:
+- Actual text read:
+- Supports:
+- Included in conclusion?:
+- Why keep it?:

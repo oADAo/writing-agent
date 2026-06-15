@@ -1,0 +1,4 @@
+interface:
+  display_name: "Maymei Script Finalizer"
+  short_description: "Finalize Maymei scripts with golden samples and voice checks."
+  default_prompt: "Use this skill to turn a completed Maymei research pack into a final read-aloud script with sample retrieval and voice evaluation."

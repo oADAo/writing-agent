@@ -7,6 +7,20 @@ from typing import Iterable, List
 
 
 EXPECTED_PACKAGES = {
+    "Longform Research Report": [
+        "Research Scope",
+        "Topic Decision",
+        "Query Log",
+        "Source Capture Status",
+        "Market / Player Demand Signals",
+        "Chapter Plan",
+        "Chapter Research Cards",
+        "Source Evidence Table",
+        "Original Text / Transcript Index",
+        "Risks / Unknowns",
+        "Need In-Game Verification",
+        "Suggested Next Research",
+    ],
     "Topic Brief": [
         "Inputs",
         "Query Log",
@@ -22,12 +36,19 @@ EXPECTED_PACKAGES = {
     ],
     "Title Pack": [
         "Topic",
+        "Historical Data Baseline",
+        "Thumbnail Data Baseline",
+        "Comparable Title Anchors",
         "Top 3",
+        "ABC Title + Thumbnail Text Tests",
         "10 Candidate Titles",
+        "Title Scorecard",
+        "Data-Based Click Hypothesis",
         "Angle Notes",
         "3 Thumbnail Copy Options",
         "3 Thumbnail Composition Directions",
         "Final Title + Thumbnail Pair",
+        "Retro Fields",
     ],
     "Script Package": [
         "Outline",
@@ -52,18 +73,37 @@ EXPECTED_PACKAGES = {
         "Why Now",
         "Risks / Unknowns",
     ],
+    "Shorts Research Pack": [
+        "Research Scope",
+        "Query Log",
+        "Source Capture Status",
+        "Platform Signals",
+        "Topic Clusters",
+        "Reference Shorts Evidence",
+        "Hook / Punch Analysis",
+        "Comment / Community Signals",
+        "Chinese Audience Fit",
+        "Production Research Notes",
+        "Source Evidence Table",
+        "Original Text / Transcript Index",
+        "Risks / Unknowns",
+        "Suggested Next Research",
+    ],
 }
 
 DEFAULT_PATHS = [
     Path("AGENTS.md"),
     Path("README.md"),
     Path("docs/workflows/content-production.md"),
+    Path("docs/workflows/longform-research.md"),
+    Path("docs/workflows/shorts-research.md"),
+    Path("docs/workflows/source-capture-research-rules.md"),
     Path("examples/output-outline.md"),
     Path("prompts/topic-research.md"),
     Path("prompts/shorts-topic-research.md"),
-    Path("prompts/title-ideation.md"),
-    Path("prompts/script-writing.md"),
-    Path("prompts/shorts-writing.md"),
+    Path("templates/deliverables/longform-research-report.md"),
+    Path("templates/deliverables/shorts-topic-pack.md"),
+    Path("templates/deliverables/shorts-research-pack.md"),
 ]
 
 

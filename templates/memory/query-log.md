@@ -1,15 +1,23 @@
 # Query Log
 
 ## Query 1
-- 查詢平台 / 站點：
-- 語圈：
-- 使用關鍵字：
-- 找到的高訊號內容：
-- 是否納入主結論：
+- Query platform / site:
+- Language:
+- Evidence family:
+- Search tier:
+- opencli command:
+- Keywords:
+- Why this query exists:
+- High-signal hits:
+- Included in final conclusion?:
 
 ## Query 2
-- 查詢平台 / 站點：
-- 語圈：
-- 使用關鍵字：
-- 找到的高訊號內容：
-- 是否納入主結論：
+- Query platform / site:
+- Language:
+- Evidence family:
+- Search tier:
+- opencli command:
+- Keywords:
+- Why this query exists:
+- High-signal hits:
+- Included in final conclusion?:

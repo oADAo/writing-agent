@@ -1,0 +1,199 @@
+{
+  "一般攻略": {
+    "formula": "一般攻略",
+    "status": "ready",
+    "sample_count": 18,
+    "opening_patterns": [
+      "以題目 promise 開場，接著快速進入攻略價值。",
+      "以明確 promise 開場，先告訴觀眾看完能省時間或變強。"
+    ],
+    "common_structures": [
+      "先把玩家會得到的好處講清楚，再補條件和步驟。",
+      "每個段落都要有判斷語氣，不只列資料。",
+      "把機制翻成省時間、少走路、變強、少踩雷這類玩家體感。"
+    ],
+    "common_transitions": [],
+    "anti_ai_notes": [
+      "Keep the promise concrete: say what the player saves, gains, avoids, or unlocks.",
+      "Use samples for rhythm and ordering only; do not reuse old facts or exact phrasing.",
+      "Add judgment voice every few paragraphs so the draft does not become a neutral report."
+    ]
+  },
+  "完整攻略": {
+    "formula": "完整攻略",
+    "status": "insufficient_data",
+    "sample_count": 4,
+    "opening_patterns": [
+      "以題目 promise 開場，接著快速進入攻略價值。"
+    ],
+    "common_structures": [
+      "先把玩家會得到的好處講清楚，再補條件和步驟。",
+      "每個段落都要有判斷語氣，不只列資料。",
+      "把機制翻成省時間、少走路、變強、少踩雷這類玩家體感。"
+    ],
+    "common_transitions": [],
+    "anti_ai_notes": [
+      "Keep the promise concrete: say what the player saves, gains, avoids, or unlocks.",
+      "Use samples for rhythm and ordering only; do not reuse old facts or exact phrasing.",
+      "Add judgment voice every few paragraphs so the draft does not become a neutral report."
+    ]
+  },
+  "技巧教學": {
+    "formula": "技巧教學",
+    "status": "ready",
+    "sample_count": 6,
+    "opening_patterns": [
+      "以題目 promise 開場，接著快速進入攻略價值。"
+    ],
+    "common_structures": [
+      "先把玩家會得到的好處講清楚，再補條件和步驟。",
+      "每個段落都要有判斷語氣，不只列資料。",
+      "把機制翻成省時間、少走路、變強、少踩雷這類玩家體感。"
+    ],
+    "common_transitions": [],
+    "anti_ai_notes": [
+      "Keep the promise concrete: say what the player saves, gains, avoids, or unlocks.",
+      "Use samples for rhythm and ordering only; do not reuse old facts or exact phrasing.",
+      "Add judgment voice every few paragraphs so the draft does not become a neutral report."
+    ]
+  },
+  "排行 top list": {
+    "formula": "排行 top list",
+    "status": "ready",
+    "sample_count": 12,
+    "opening_patterns": [
+      "以明確 promise 開場，先告訴觀眾看完能省時間或變強。",
+      "以題目 promise 開場，接著快速進入攻略價值。"
+    ],
+    "common_structures": [
+      "先把玩家會得到的好處講清楚，再補條件和步驟。",
+      "每個段落都要有判斷語氣，不只列資料。",
+      "把機制翻成省時間、少走路、變強、少踩雷這類玩家體感。"
+    ],
+    "common_transitions": [],
+    "anti_ai_notes": [
+      "Keep the promise concrete: say what the player saves, gains, avoids, or unlocks.",
+      "Use samples for rhythm and ordering only; do not reuse old facts or exact phrasing.",
+      "Add judgment voice every few paragraphs so the draft does not become a neutral report."
+    ]
+  },
+  "推薦清單": {
+    "formula": "推薦清單",
+    "status": "ready",
+    "sample_count": 18,
+    "opening_patterns": [
+      "以明確 promise 開場，先告訴觀眾看完能省時間或變強。",
+      "以題目 promise 開場，接著快速進入攻略價值。"
+    ],
+    "common_structures": [
+      "先把玩家會得到的好處講清楚，再補條件和步驟。",
+      "每個段落都要有判斷語氣，不只列資料。",
+      "把機制翻成省時間、少走路、變強、少踩雷這類玩家體感。"
+    ],
+    "common_transitions": [],
+    "anti_ai_notes": [
+      "Keep the promise concrete: say what the player saves, gains, avoids, or unlocks.",
+      "Use samples for rhythm and ordering only; do not reuse old facts or exact phrasing.",
+      "Add judgment voice every few paragraphs so the draft does not become a neutral report."
+    ]
+  },
+  "效率刷法": {
+    "formula": "效率刷法",
+    "status": "ready",
+    "sample_count": 7,
+    "opening_patterns": [
+      "以明確 promise 開場，先告訴觀眾看完能省時間或變強。",
+      "以題目 promise 開場，接著快速進入攻略價值。"
+    ],
+    "common_structures": [
+      "先把玩家會得到的好處講清楚，再補條件和步驟。",
+      "每個段落都要有判斷語氣，不只列資料。",
+      "把機制翻成省時間、少走路、變強、少踩雷這類玩家體感。"
+    ],
+    "common_transitions": [],
+    "anti_ai_notes": [
+      "Keep the promise concrete: say what the player saves, gains, avoids, or unlocks.",
+      "Use samples for rhythm and ordering only; do not reuse old facts or exact phrasing.",
+      "Add judgment voice every few paragraphs so the draft does not become a neutral report."
+    ]
+  },
+  "新手技巧清單": {
+    "formula": "新手技巧清單",
+    "status": "ready",
+    "sample_count": 18,
+    "opening_patterns": [
+      "以明確 promise 開場，先告訴觀眾看完能省時間或變強。",
+      "以題目 promise 開場，接著快速進入攻略價值。"
+    ],
+    "common_structures": [
+      "先把玩家會得到的好處講清楚，再補條件和步驟。",
+      "每個段落都要有判斷語氣，不只列資料。",
+      "把機制翻成省時間、少走路、變強、少踩雷這類玩家體感。"
+    ],
+    "common_transitions": [],
+    "anti_ai_notes": [
+      "Keep the promise concrete: say what the player saves, gains, avoids, or unlocks.",
+      "Use samples for rhythm and ordering only; do not reuse old facts or exact phrasing.",
+      "Add judgment voice every few paragraphs so the draft does not become a neutral report."
+    ]
+  },
+  "機制拆解": {
+    "formula": "機制拆解",
+    "status": "ready",
+    "sample_count": 6,
+    "opening_patterns": [
+      "以題目 promise 開場，接著快速進入攻略價值。",
+      "以明確 promise 開場，先告訴觀眾看完能省時間或變強。"
+    ],
+    "common_structures": [
+      "先把玩家會得到的好處講清楚，再補條件和步驟。",
+      "每個段落都要有判斷語氣，不只列資料。",
+      "把機制翻成省時間、少走路、變強、少踩雷這類玩家體感。"
+    ],
+    "common_transitions": [],
+    "anti_ai_notes": [
+      "Keep the promise concrete: say what the player saves, gains, avoids, or unlocks.",
+      "Use samples for rhythm and ordering only; do not reuse old facts or exact phrasing.",
+      "Add judgment voice every few paragraphs so the draft does not become a neutral report."
+    ]
+  },
+  "流派 build": {
+    "formula": "流派 build",
+    "status": "insufficient_data",
+    "sample_count": 4,
+    "opening_patterns": [
+      "以明確 promise 開場，先告訴觀眾看完能省時間或變強。",
+      "以題目 promise 開場，接著快速進入攻略價值。"
+    ],
+    "common_structures": [
+      "先把玩家會得到的好處講清楚，再補條件和步驟。",
+      "每個段落都要有判斷語氣，不只列資料。",
+      "把機制翻成省時間、少走路、變強、少踩雷這類玩家體感。"
+    ],
+    "common_transitions": [],
+    "anti_ai_notes": [
+      "Keep the promise concrete: say what the player saves, gains, avoids, or unlocks.",
+      "Use samples for rhythm and ordering only; do not reuse old facts or exact phrasing.",
+      "Add judgment voice every few paragraphs so the draft does not become a neutral report."
+    ]
+  },
+  "第一天必做": {
+    "formula": "第一天必做",
+    "status": "insufficient_data",
+    "sample_count": 1,
+    "opening_patterns": [
+      "以題目 promise 開場，接著快速進入攻略價值。"
+    ],
+    "common_structures": [
+      "先把玩家會得到的好處講清楚，再補條件和步驟。",
+      "每個段落都要有判斷語氣，不只列資料。",
+      "把機制翻成省時間、少走路、變強、少踩雷這類玩家體感。"
+    ],
+    "common_transitions": [],
+    "anti_ai_notes": [
+      "Keep the promise concrete: say what the player saves, gains, avoids, or unlocks.",
+      "Use samples for rhythm and ordering only; do not reuse old facts or exact phrasing.",
+      "Add judgment voice every few paragraphs so the draft does not become a neutral report."
+    ]
+  }
+}

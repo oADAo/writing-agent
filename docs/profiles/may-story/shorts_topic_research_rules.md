@@ -1,227 +1,144 @@
 # 玫玫物語熱門 Shorts 主題搜尋規則
 
-## 用途
+## 目的
 
-這份文件只負責一件事：替 `玫玫物語` 找出最近值得做的 `Shorts` 題型與題目。
+這份規則只處理 `玫玫物語` 的 Shorts 熱門主題搜尋。
 
-它和長影片主題研究不同。
-長影片看的是搜尋需求、攻略需求、長尾題型。
-Shorts 看的是：
-- 哪種題型在不同創作者手上都跑得動
-- 哪種 punch 在不同語圈都反覆出現
-- 哪種畫面、反差、結果能在 `3 秒內` 被看懂
+重點不是找單支爆片，而是找：
+- 可複製的 Shorts 題型
+- 已經在多平台或多語圈出現的 punch
+- 能直接接到 Shorts 寫稿步驟的題目包
 
-## 先過邊界
+## 必讀
 
-正式研究前，先讀：
+開始前先讀：
 - `docs/profiles/may-story/channel_scope.md`
+- `docs/workflows/shorts-research.md`
+- `prompts/shorts-topic-research.md`
 
-如果題材不符合頻道邊界，就不要硬做。
+## opencli 優先原則
 
-## 主證據優先順序
+熱門 Shorts 主題搜尋一律先用 `opencli`。
 
-Shorts 研究時，主證據固定優先看：
-- `小型自媒體`
-- `個人創作者`
-- `非官方搬運解析`
+正式搜尋前必須先跑：
 
-只要題型成立的主要理由是：
-- 創作者本人很紅
-- VTuber / 實況主粉絲盤很大
-- 單次事件剛好爆
-- 官方片本來就會高流量
-- 純人格魅力撐起來
+```powershell
+python scripts/opencli_tooling.py ensure --update
+```
 
-就不能直接把那支片當成可抄題型。
+如果這一步失敗，先修復 Browser Bridge / opencli / yt-dlp，或在研究包明確標註限制；不能默默只看搜尋結果標題。
 
-以下來源只拿來做 `事實校正`，不是主證據：
-- 官方網站
-- 官方頻道
-- Nintendo / Capcom / The Pokémon Company 等官方帳號
-- 大型媒體
-- 商店頁
-- 發售與更新公告
+### 固定平台
 
-## 固定研究範圍
-
-### 語圈
-
-固定研究三個語圈：
-- 中文
-- 日文
-- 英文
-
-### 主平台
-
-固定研究五個主平台：
 - `YouTube Shorts`
 - `TikTok`
 - `IG Reels`
 - `巴哈姆特`
 - `bilibili`
 
-如果某款遊戲在其中某個平台樣本真的很薄，也要明寫 `有查，但資料不足`，不能直接略過。
+### 預設工具棧
 
-## 搜尋方法硬規則
+- `YouTube Shorts`：`opencli youtube search`
+- `TikTok`：`opencli tiktok search`
+- `bilibili`：`opencli bilibili search`
+- `IG Reels`：`opencli google search "site:instagram.com/reel/ ..."`
+- `巴哈姆特`：`opencli google search "site:forum.gamer.com.tw ..."`
 
-### 1. 先確認是不是 `真正的 Shorts`
+### 平台分層
 
-- 只認 `YouTube` 的 `/shorts/` 連結。
-- 不要把一般影片、切片、只是秒數短的片混進來。
-- `TikTok / IG Reels` 也要盡量確認是原生短影音頁，不要拿新聞整理頁頂替。
+- `核心平台`
+  - `YouTube Shorts`
+  - `TikTok`
+  - `IG Reels`
+  - `bilibili`
+- `擴張平台`
+  - `巴哈姆特`
+  - `TikTok Web`
+  - `Threads`
+- `驗證 / 即時補查`
+  - `X / Twitter`
+  - `Reddit`
 
-### 2. 先做遊戲名翻譯表
+如果這次任務要求「越廣越好」或「寧可慢一點」，預設直接用 `--breadth broad`；需要再往外擴時，再切 `--breadth max`。
 
-每款遊戲先整理：
+## 查詢流程
+
+### 1. 先確認找的是 Shorts，不是一般短片
+
+- `YouTube` 只認 `/shorts/` 連結
+- 不是秒數短就算 Shorts
+- 不要把一般影片切片混進來
+
+### 2. 先做翻譯表
+
+每款遊戲先列：
 - 中文名
 - 日文名
 - 英文名
+- 常見別名 / 玩家暱稱 / 舊譯名
 
-如果有：
-- 常見簡稱
-- 舊譯名
-- 玩家暱稱
+### 3. 一題一搜，不要用超寬泛大雜燴
 
-也一起列進去。
+每個語圈都要分開查，例如：
+- `遊戲名 + hidden + shorts`
+- `遊戲名 + tips + shorts`
+- `遊戲名 + funny + shorts`
+- `遊戲名 + build + shorts`
 
-### 3. 各語言用自己的關鍵字分開搜
+### 4. 每個語圈先抓 10 到 20 支候選，再分主題簇
 
-不要只用中文翻過去硬搜，也不要只用英文硬套所有語圈。
-
-中文常用詞：
-- `彩蛋`
-- `隱藏`
-- `實測`
-- `冷知識`
-- `攻略`
-- `每日必做`
-- `千萬別做`
-- `最快`
-- `教學`
-- `建築`
-- `反應`
-- `變身`
-- `角色故事`
-
-日文常用詞：
-- `小ネタ`
-- `裏技`
-- `検証`
-- `比較`
-- `バグ`
-- `攻略`
-- `最強`
-- `やってみた`
-- `建築`
-- `かわいい`
-- `変身`
-- `隠し要素`
-- `効率`
-
-英文常用詞：
-- `hidden`
-- `secret`
-- `tips`
-- `trick`
-- `guide`
-- `daily`
-- `build`
-- `funny`
-- `reaction`
-- `testing`
-- `comparison`
-- `transformation`
-- `rare`
-- `fastest`
-- `mistake`
-
-### 4. 每個語言都要 `一題一搜`
-
-不要一口氣問太多事。
-
-例如：
-- `Pokopia Ditto shorts`
-- `Pokopia build shorts`
-- `Pokopia secret shorts`
-- `ポコピア メタモン shorts`
-- `ポコピア 建築 shorts`
-
-### 5. 每個語圈先拉一批候選
-
-每種語言先抓 `10 到 20 支` 候選，至少記下：
+固定記下：
 - 原文標題
 - 中文翻譯
 - 連結
 - 觀看數快照
 - 發片時間
-- 是哪個主題簇
+- 所屬主題簇
+- 為什麼值得抄
+- 這題是不是可複製熱門
 
-### 6. 先分主題簇，再看單支影片
+### 5. 不只看 YouTube Shorts
 
-不要直接被單支爆片帶走。
-先把影片分成 `主題簇`，例如：
-- 實測會發生什麼
-- 離譜互動 / 彩蛋
-- 建築 / 畫面奇觀
-- 高收益技巧
-- 新手別犯錯
-- 稀有 / 傳說 / 隱藏解鎖
-- 劇情反轉 / 角色設定
-- Bug / 荒謬現象 / 搞笑事故
+Shorts 題型研究不是只看 YouTube。
 
-### 7. 排除假熱門
+要一起比對：
+- TikTok 有沒有相同 punch
+- IG Reels 有沒有相同畫面記憶點
+- bilibili / 巴哈姆特有沒有同樣的社群共鳴
 
-以下只能當參考，不能直接當可抄主題：
-- 創作者本人很紅
-- VTuber / 實況主粉絲盤
-- 單次事件
-- 官方片
-- 純人格魅力
-- 標題很強但主題不可複製
+## Query Log 硬規則
 
-## 可複製熱門判斷
+每個查詢都要留下：
+- `Query platform / site`
+- `Language`
+- `opencli command`
+- `Keywords`
+- `High-signal hits`
+- `Included in final conclusion?`
 
-真正能抄的題型，至少要符合 `3 個` 條件：
+不能只寫平台名，不附實際 `opencli command`。
+
+## 什麼才算可複製熱門
+
+不是看單支片，而是看題型可複製性。
+
+通常要同時滿足大部分條件：
 - 不同創作者都做過
 - 不同語言圈也有人做
 - 標題一看就懂
 - 畫面一眼就懂
-- 不靠創作者本人也成立
+- 不靠創作者本人魅力也成立
 
-我之後固定用這 `5 個標準` 判斷值不值得做：
+再用這 `5` 個標準判斷值不值得做：
 - 這題 `3 秒內` 看得懂嗎
 - 有明確結果嗎
 - 有反差嗎
 - 畫面有記憶點嗎
 - 其他人做也有機會跑嗎
 
-## 如果下一步要寫 Shorts 文稿
+## 交付格式
 
-選到參考 Shorts 之後，還要再補兩層：
-
-### 1. 研究前 1 句怎麼鉤人
-
-- 先拆這支片的第一句在做什麼
-- 學的是 `勾子結構`，不是逐字翻譯
-
-### 2. 研究高讚留言都在吃哪個點
-
-- 看高讚留言反覆在吃哪個笑點、反差點、痛點或第二層解讀
-- 只准內化進文稿
-- 不要硬寫成 `留言都在說`
-
-## 最後怎麼下結論
-
-不要說：
-- `這支紅，所以這主題能做`
-
-要說：
-- 現在最強的是哪 `3 種主題`
-- 哪一種是 `誰做都有機會跑`
-- 哪一種只是 `特例爆片`
-- 哪一種最適合 `玫玫物語`
-
-## 固定輸出格式
+如果任務只是找最近可做的 Shorts 題型，交付：
 
 ```md
 # Shorts Topic Pack
@@ -234,30 +151,18 @@ Shorts 研究時，主證據固定優先看：
 ## Cross-Platform Validation
 ## Chinese Audience Fit
 ## 5 Shorts Topic Options
-### Option 1
-- Topic Cluster
-- Why It’s Moving
-- Platform Evidence
-- Cross-Language Evidence
-- Reference Shorts
-  - 原文標題
-  - 中文翻譯
-  - 連結
-  - 觀看數快照
-  - 發片時間
-  - 所屬主題簇
-  - 為什麼值得抄
-  - 這題是不是可複製熱門
-- One-Line Topic Pitch
-- Possible Hook
-- Rhythm / Format Reference
-- Chinese Audience Fit
-- Use / Skip
 ## Top 1 Recommendation
 ## Why Now
 ## Risks / Unknowns
 ```
 
-## 一句話版交接
+如果使用者要求 `Shorts 研究包 / 參考短片整理 / hook、punch、畫面節奏 / 可製作素材`，改交 `Shorts Research Pack`，格式以 `templates/deliverables/shorts-research-pack.md` 為準。
 
-熱門 Shorts 研究不是找哪支片爆，而是找哪種 `小創作者也能複製` 的題型，在不同語圈、不同創作者手上都跑得動，再把它翻成 `玫玫物語` 能寫、能講、能做的中文題目。
+## 禁止事項
+
+- 不要把官方片、新聞通稿題、大媒體整理片直接當主證據。
+- 不要把 VTuber、實況主、靠人格魅力撐起來的片直接當題型。
+- 不要只看單語圈。
+- 不要只看標題，不看畫面和留言共鳴。
+- 不要把一般短片硬當 Shorts。
+- 不要不記 `opencli command`。

@@ -7,6 +7,23 @@ from typing import List, Optional
 
 
 REQUIRED_HEADINGS = {
+    "longform-research": {
+        "title": "Longform Research Report",
+        "sections": [
+            "Research Scope",
+            "Topic Decision",
+            "Query Log",
+            "Source Capture Status",
+            "Market / Player Demand Signals",
+            "Chapter Plan",
+            "Chapter Research Cards",
+            "Source Evidence Table",
+            "Original Text / Transcript Index",
+            "Risks / Unknowns",
+            "Need In-Game Verification",
+            "Suggested Next Research",
+        ],
+    },
     "topic": {
         "title": "Topic Brief",
         "sections": [
@@ -27,12 +44,19 @@ REQUIRED_HEADINGS = {
         "title": "Title Pack",
         "sections": [
             "Topic",
+            "Historical Data Baseline",
+            "Thumbnail Data Baseline",
+            "Comparable Title Anchors",
             "Top 3",
+            "ABC Title + Thumbnail Text Tests",
             "10 Candidate Titles",
+            "Title Scorecard",
+            "Data-Based Click Hypothesis",
             "Angle Notes",
             "3 Thumbnail Copy Options",
             "3 Thumbnail Composition Directions",
             "Final Title + Thumbnail Pair",
+            "Retro Fields",
         ],
     },
     "script": {
@@ -63,6 +87,51 @@ REQUIRED_HEADINGS = {
             "Risks / Unknowns",
         ],
     },
+    "shorts-research": {
+        "title": "Shorts Research Pack",
+        "sections": [
+            "Research Scope",
+            "Query Log",
+            "Source Capture Status",
+            "Platform Signals",
+            "Topic Clusters",
+            "Reference Shorts Evidence",
+            "Hook / Punch Analysis",
+            "Comment / Community Signals",
+            "Chinese Audience Fit",
+            "Production Research Notes",
+            "Source Evidence Table",
+            "Original Text / Transcript Index",
+            "Risks / Unknowns",
+            "Suggested Next Research",
+        ],
+    },
+}
+
+REQUIRED_MARKERS = {
+    "longform-research": [
+        "Tool readiness file:",
+        "Source originals folder:",
+        "Transcript folder:",
+        "Package manifest:",
+        "opencli command:",
+        "Evidence file:",
+        "Actual text read:",
+        "Included in conclusion?:",
+        "Needs in-game verification:",
+    ],
+    "shorts-research": [
+        "Tool readiness file:",
+        "Source originals folder:",
+        "Transcript folder:",
+        "Package manifest:",
+        "opencli command",
+        "Shorts URL:",
+        "Evidence file:",
+        "Actual text read:",
+        "Capture status:",
+        "Included in conclusion?:",
+    ],
 }
 
 
@@ -99,6 +168,12 @@ def check_deliverable(path: Path, mode: Optional[str] = None) -> List[str]:
     missing = [section for section in config["sections"] if section not in headings]
     if missing:
         failures.append(f"{path}: missing sections: {', '.join(missing)}")
+
+    missing_markers = [
+        marker for marker in REQUIRED_MARKERS.get(resolved_mode, []) if marker not in content
+    ]
+    if missing_markers:
+        failures.append(f"{path}: missing markers: {', '.join(missing_markers)}")
     return failures
 
 

@@ -10,25 +10,43 @@ def read(rel_path: str) -> str:
 
 
 class ShortsTemplateScopeTests(unittest.TestCase):
-    def test_shorts_template_only_lives_in_shorts_flow(self) -> None:
-        self.assertIn("universal_video_template.md", read("prompts/shorts-writing.md"))
-        self.assertIn("universal_video_template.md", read("docs/profiles/may-story/shorts_rules.md"))
+    def test_shorts_research_is_current_entrypoint_but_shorts_writing_is_not(self) -> None:
+        current_entrypoints = {
+            "AGENTS.md": ["docs/workflows/shorts-research.md"],
+            "README.md": ["docs/workflows/shorts-research.md"],
+            "docs/project-map.md": ["docs/workflows/shorts-research.md"],
+            "docs/agents/skill-routing.md": ["docs/workflows/shorts-research.md"],
+        }
+        for rel_path, expected in current_entrypoints.items():
+            content = read(rel_path)
+            for marker in expected:
+                self.assertIn(marker, content, rel_path)
 
-        self.assertNotIn("universal_video_template.md", read("prompts/script-writing.md"))
-        self.assertNotIn("universal_video_template.md", read("docs/profiles/may-story/script_template.md"))
-        self.assertNotIn("通用節奏模板記憶", read("docs/profiles/may-story/voice_memory.md"))
+        for rel_path in [
+            "AGENTS.md",
+            "README.md",
+            "docs/project-map.md",
+            "docs/agents/skill-routing.md",
+            "docs/workflows/longform-research.md",
+            "prompts/topic-research.md",
+        ]:
+            content = read(rel_path)
+            self.assertNotIn("universal_video_template.md", content, rel_path)
+            self.assertNotIn("prompts/shorts-writing.md` |", content, rel_path)
 
-    def test_agents_only_points_to_template_once_for_shorts_mode(self) -> None:
-        content = read("AGENTS.md")
-        self.assertEqual(content.count("universal_video_template.md"), 1)
+    def test_shorts_research_pack_template_has_source_capture_contract(self) -> None:
+        content = read("templates/deliverables/shorts-research-pack.md")
+        self.assertIn("# Shorts Research Pack", content)
+        self.assertIn("Shorts URL:", content)
+        self.assertIn("Evidence file:", content)
+        self.assertIn("Actual text read:", content)
+        self.assertIn("Production Research Notes", content)
 
-    def test_template_marked_script_uses_chapter_marker_not_markdown_heading(self) -> None:
+    def test_legacy_shorts_template_still_keeps_chapter_marker(self) -> None:
         for rel_path in [
             "prompts/shorts-writing.md",
             "docs/profiles/may-story/shorts_rules.md",
             "docs/profiles/may-story/universal_video_template.md",
-            "examples/output-outline.md",
-            "workspace/deliverables/shorts/2026-03-20-pokopia-rocket-best-short.md",
         ]:
             content = read(rel_path)
             self.assertIn("[chapter]", content, rel_path)

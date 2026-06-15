@@ -1,0 +1,2169 @@
+{
+  "source_channel_url": "https://www.youtube.com/@maymei_gaming/videos",
+  "reviewed_at": "2026-05-08",
+  "review_method": "AI visual review of YouTube channel thumbnail contact sheets; OCR candidates were not used as final labels.",
+  "review_asset_dir": "workspace/memory/runs/20260508-all-thumbnail-text-fill/manual-sheets",
+  "manual_tsv": "workspace/memory/runs/20260508-all-thumbnail-text-fill/manual-thumbnail-text.tsv",
+  "records": [
+    {
+      "video_id": "yswF3G2OHM4",
+      "thumbnail_text": "買之前 要知道的 10件事",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 01."
+    },
+    {
+      "video_id": "tQ9Mj8TpZUo",
+      "thumbnail_text": "5月必玩! 10款最新強作",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 01."
+    },
+    {
+      "video_id": "pYHGJ9W8FOg",
+      "thumbnail_text": "世界第一 MEGA花葉蒂",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 01."
+    },
+    {
+      "video_id": "BxwsA4rXkNU",
+      "thumbnail_text": "簡單無腦 2200分 單打隊伍",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 01."
+    },
+    {
+      "video_id": "LQgNad45130",
+      "thumbnail_text": "TOP10 最強必練寶可夢",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 01."
+    },
+    {
+      "video_id": "0U1wPUPlFk0",
+      "thumbnail_text": "新手入坑 10個必看重點",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 01."
+    },
+    {
+      "video_id": "8wOkjUtUCwI",
+      "thumbnail_text": "買之前 要知道的 10件事",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 01."
+    },
+    {
+      "video_id": "CxVDyrzlNG0",
+      "thumbnail_text": "真的好入坑? 5個對戰觀念",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 01."
+    },
+    {
+      "video_id": "0aAARKEo6dk",
+      "thumbnail_text": "買之前 要知道的 10件事",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 01."
+    },
+    {
+      "video_id": "nsBY-oA7Ptw",
+      "thumbnail_text": "4月必玩! 10款最新強作",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 01."
+    },
+    {
+      "video_id": "Eo0652uYLFA",
+      "thumbnail_text": "零~紅蝶 通關體驗",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 01."
+    },
+    {
+      "video_id": "TaJb2JSax2Y",
+      "thumbnail_text": "素材自由! 5大自動工廠",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 01."
+    },
+    {
+      "video_id": "miXOX_gCKjs",
+      "thumbnail_text": "夢島 機制詳細解析",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 02."
+    },
+    {
+      "video_id": "5yogqJAOLfw",
+      "thumbnail_text": "買之前 要知道的 10件事",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 02."
+    },
+    {
+      "video_id": "2hqpcV28k_c",
+      "thumbnail_text": "每天必做 10件事",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 02."
+    },
+    {
+      "video_id": "8lbIY-GD3lo",
+      "thumbnail_text": "環境等級 速升10等!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 02."
+    },
+    {
+      "video_id": "l8wIaPG9Wjc",
+      "thumbnail_text": "新手攻略 10大技巧",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 02."
+    },
+    {
+      "video_id": "oXfk4kEYhPU",
+      "thumbnail_text": "第一天 必做的 5件事",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 02."
+    },
+    {
+      "video_id": "pq-VrOj4n3o",
+      "thumbnail_text": "買之前 要知道的 10件事",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 02."
+    },
+    {
+      "video_id": "N85iA-qaXYA",
+      "thumbnail_text": "3月必玩! 10款最新強作",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 02."
+    },
+    {
+      "video_id": "uOwUWlO337Y",
+      "thumbnail_text": "買之前 要知道的 10件事",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 02."
+    },
+    {
+      "video_id": "pC4QwjerXps",
+      "thumbnail_text": "新手必看 10個超實用技巧!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 02."
+    },
+    {
+      "video_id": "HXBE70Ew0AQ",
+      "thumbnail_text": "真三國無雙 夢幻四英傑 SWITCH2上玩無雙 有多爽?",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 02."
+    },
+    {
+      "video_id": "fyACLH7ENFQ",
+      "thumbnail_text": "1月必玩! 10款GFN遊戲推薦",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 02."
+    },
+    {
+      "video_id": "kXAe5g9b1o0",
+      "thumbnail_text": "好玩在哪? 5大亮點解析!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 03."
+    },
+    {
+      "video_id": "qpNU1EsNepY",
+      "thumbnail_text": "超大型DLC 5個必玩重點!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 03."
+    },
+    {
+      "video_id": "dOsw1DP8ClU",
+      "thumbnail_text": "精神時光屋 5大核心玩法!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 03."
+    },
+    {
+      "video_id": "ei4LaaJ5sTc",
+      "thumbnail_text": "買之前 要知道的 5件事",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 03."
+    },
+    {
+      "video_id": "rejk9AeRVZ0",
+      "thumbnail_text": "12月必玩! 10款GFN遊戲推薦",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 03."
+    },
+    {
+      "video_id": "hLUzbo1MLS8",
+      "thumbnail_text": "2026 25款超期待神作!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 03."
+    },
+    {
+      "video_id": "zT1leC8MO_0",
+      "thumbnail_text": "2025必玩! 7款神作遊戲推薦",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 03."
+    },
+    {
+      "video_id": "LbYTVR_6FV0",
+      "thumbnail_text": "異次元樹果 最快速刷攻略!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 03."
+    },
+    {
+      "video_id": "BAy3MeM_hXg",
+      "thumbnail_text": "玩前必看! 5個超實用技巧",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 03."
+    },
+    {
+      "video_id": "W2Gd9et_dD4",
+      "thumbnail_text": "新手必看 10個超實用技巧!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 03."
+    },
+    {
+      "video_id": "esVcNiOutMI",
+      "thumbnail_text": "12月必玩! 10款最新強作",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 03."
+    },
+    {
+      "video_id": "k3G07z1n-gE",
+      "thumbnail_text": "買之前 要知道的 10件事",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 03."
+    },
+    {
+      "video_id": "vmbtjNheFhs",
+      "thumbnail_text": "新手必看 7個超實用技巧!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 04."
+    },
+    {
+      "video_id": "yrCbrDxYles",
+      "thumbnail_text": "買之前 要知道的 5件事",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 04."
+    },
+    {
+      "video_id": "q8rd5FmG48s",
+      "thumbnail_text": "新手攻略 10大實用技巧",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 04."
+    },
+    {
+      "video_id": "qEJUuNSnEnE",
+      "thumbnail_text": "10月必玩! 10款極度好評神作",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 04."
+    },
+    {
+      "video_id": "nFw2zqloubM",
+      "thumbnail_text": "新手攻略 10大實用技巧",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 04."
+    },
+    {
+      "video_id": "fo_bVJm8Z3M",
+      "thumbnail_text": "等級突破100! DLC最新資訊懶人包",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 04."
+    },
+    {
+      "video_id": "cSP76XCxB1s",
+      "thumbnail_text": "TOP10 最強寶可夢排名",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 04."
+    },
+    {
+      "video_id": "Jkp-2Wd1Md8",
+      "thumbnail_text": "11月必玩! 10款最新強作",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 04."
+    },
+    {
+      "video_id": "TXVo6H7LSmo",
+      "thumbnail_text": "TOP10 最做壞 技能排名",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 04."
+    },
+    {
+      "video_id": "6Avhz-RN5Oo",
+      "thumbnail_text": "掛機刷閃 30隻人氣稀有寶可夢",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 04."
+    },
+    {
+      "video_id": "nm5aM6AWeqM",
+      "thumbnail_text": "閃耀護符 簡單速拿方法!!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 04."
+    },
+    {
+      "video_id": "-WM66Z7yK8g",
+      "thumbnail_text": "超級碎片 5個速刷地點",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 04."
+    },
+    {
+      "video_id": "yhfx47jA7UQ",
+      "thumbnail_text": "100個 全彩色螺絲位置",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 05."
+    },
+    {
+      "video_id": "kjg3Ofdp0z0",
+      "thumbnail_text": "機制詳解 4種速刷閃光的方法",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 05."
+    },
+    {
+      "video_id": "gPojQbTo29U",
+      "thumbnail_text": "全頭目準神捕捉",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 05."
+    },
+    {
+      "video_id": "iubtLzf2TaE",
+      "thumbnail_text": "新手攻略 快速上手調和",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 05."
+    },
+    {
+      "video_id": "bEMUOutCntM",
+      "thumbnail_text": "最高效率速刷經驗值",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 05."
+    },
+    {
+      "video_id": "5fWfzjaK9j8",
+      "thumbnail_text": "TOP10 開局必抓寶可夢",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 05."
+    },
+    {
+      "video_id": "rsvbPFDL1is",
+      "thumbnail_text": "掛機刷閃 超簡單方法!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 05."
+    },
+    {
+      "video_id": "C9eReYyF-yA",
+      "thumbnail_text": "新手必看! 7大實用技巧攻略",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 05."
+    },
+    {
+      "video_id": "39FcyMCpG-k",
+      "thumbnail_text": "新手攻略 10大實用技巧",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 05."
+    },
+    {
+      "video_id": "d6NQ5TGwAWU",
+      "thumbnail_text": "速刷 1分鐘200片",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 05."
+    },
+    {
+      "video_id": "TnWIUfWvrW8",
+      "thumbnail_text": "開局獲得 XY御三家",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 05."
+    },
+    {
+      "video_id": "-naQWO5O_Sw",
+      "thumbnail_text": "高級設備 必玩神作10款",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 05."
+    },
+    {
+      "video_id": "yaL0t4IWRx8",
+      "thumbnail_text": "買之前 要知道的 10件事",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 06."
+    },
+    {
+      "video_id": "jl3M4dtGAzU",
+      "thumbnail_text": "鍊金最新作 萊莎回來啦!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 06."
+    },
+    {
+      "video_id": "TyxMxHs7W80",
+      "thumbnail_text": "從零打造城市 治癒建造新作!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 06."
+    },
+    {
+      "video_id": "qeLYH1FjQ14",
+      "thumbnail_text": "買之前 要知道的 10件事",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 06."
+    },
+    {
+      "video_id": "w7I87wgakhY",
+      "thumbnail_text": "新手必看! 10個實用技巧&攻略",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 06."
+    },
+    {
+      "video_id": "1pv7KM15KjQ",
+      "thumbnail_text": "超人氣手遊 移植啦! 開服前必看懶人包",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 06."
+    },
+    {
+      "video_id": "wpZOTw9_c_4",
+      "thumbnail_text": "武俠修仙神作 手機也能玩了!?",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 06."
+    },
+    {
+      "video_id": "R1Zs3hW1qyY",
+      "thumbnail_text": "紀念碑谷3 解謎神作回來啦!!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 06."
+    },
+    {
+      "video_id": "Ww-eTLVGoHk",
+      "thumbnail_text": "8月必玩! 10款最新強作",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 06."
+    },
+    {
+      "video_id": "tzktB9iEpR8",
+      "thumbnail_text": "買之前 要知道的 10件事",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 06."
+    },
+    {
+      "video_id": "1kpRVHrsN7E",
+      "thumbnail_text": "新手必看! 10個超實用技巧&攻略",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 06."
+    },
+    {
+      "video_id": "c3QWVEoilJ0",
+      "thumbnail_text": "買之前 要知道的 10件事",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 06."
+    },
+    {
+      "video_id": "PBeVNYiAf24",
+      "thumbnail_text": "7月必玩! 10款最新強作",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 07."
+    },
+    {
+      "video_id": "WeVhFJ4Yk3I",
+      "thumbnail_text": "Switch2 開箱實測!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 07."
+    },
+    {
+      "video_id": "ZR5Mj-z_pmU",
+      "thumbnail_text": "新手必看! 10個超實用技巧&知識",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 07."
+    },
+    {
+      "video_id": "FisH5q-QpZQ",
+      "thumbnail_text": "隱藏職業 開局就能解!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 07."
+    },
+    {
+      "video_id": "i1UojQR06hc",
+      "thumbnail_text": "經典重製! 最強平民神角推薦",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 07."
+    },
+    {
+      "video_id": "_Z0cY9XHPRE",
+      "thumbnail_text": "買之前 要知道的 10件事",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 07."
+    },
+    {
+      "video_id": "VgyYSlHs3Do",
+      "thumbnail_text": "6月必玩! 10款最新強作",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 07."
+    },
+    {
+      "video_id": "raTCnCWD5hc",
+      "thumbnail_text": "最速畢業! 獨狼送死流",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 07."
+    },
+    {
+      "video_id": "k_dNt5a4SqY",
+      "thumbnail_text": "超重要支線! 9個失蹤的刷頭精位置攻略",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 07."
+    },
+    {
+      "video_id": "ZNZOCKLc9Kw",
+      "thumbnail_text": "新手必看! 10個超實用技巧&知識",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 07."
+    },
+    {
+      "video_id": "M5tLnURAW8U",
+      "thumbnail_text": "值得玩嗎? 30小時通關心得",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 07."
+    },
+    {
+      "video_id": "hXt5wk2F4V4",
+      "thumbnail_text": "SS8新賽季 版本T0 月3腐蝕吸管流",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 07."
+    },
+    {
+      "video_id": "kKyhDTA96T4",
+      "thumbnail_text": "櫻浪太強! 限時活動1分鐘爆刷鎧龍",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 08."
+    },
+    {
+      "video_id": "5wgui9irOe4",
+      "thumbnail_text": "5月必玩! 10款最新強作",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 08."
+    },
+    {
+      "video_id": "yzh19PWHOGE",
+      "thumbnail_text": "3分鐘就一場 鎧玉最高效率速刷!!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 08."
+    },
+    {
+      "video_id": "F2kUZpZJbXQ",
+      "thumbnail_text": "貓飯自由! 高級餐卷最速刷取攻略",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 08."
+    },
+    {
+      "video_id": "UnffDrWYSJs",
+      "thumbnail_text": "龍乳? 孕吐? 白熾龍機制詳解",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 08."
+    },
+    {
+      "video_id": "tavLbRwMRyw",
+      "thumbnail_text": "不會死! 超輪椅! 銃槍最新畢業配裝",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 08."
+    },
+    {
+      "video_id": "6sSZEaKPEqk",
+      "thumbnail_text": "超豪華陣容!! SWITCH2 首發遊戲懶人包",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 08."
+    },
+    {
+      "video_id": "BBf6psndVX4",
+      "thumbnail_text": "品質999! 鍊金系統詳細攻略",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 08."
+    },
+    {
+      "video_id": "iaiTLmo3bKs",
+      "thumbnail_text": "5套! 通用防具畢業配裝",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 08."
+    },
+    {
+      "video_id": "6Byx3O0E80I",
+      "thumbnail_text": "輪椅簡單 單手劍 畢業配裝!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 08."
+    },
+    {
+      "video_id": "3k7_G86SLBk",
+      "thumbnail_text": "買之前 要知道的 10件事",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 08."
+    },
+    {
+      "video_id": "qJ2eFQSd0VQ",
+      "thumbnail_text": "4月必玩! 10款最新強作",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 08."
+    },
+    {
+      "video_id": "NvF-1rx2r9g",
+      "thumbnail_text": "副武器 5個實用技巧",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 09."
+    },
+    {
+      "video_id": "aVuLLS120bk",
+      "thumbnail_text": "武俠版柏德之門 靈獸江湖 10大優缺點老實說",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 09."
+    },
+    {
+      "video_id": "TmyVrocj7Vc",
+      "thumbnail_text": "10個 你不知道的 離譜細節!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 09."
+    },
+    {
+      "video_id": "ZxOElsDy1gg",
+      "thumbnail_text": "值得買嗎? 5大優缺點老實說",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 09."
+    },
+    {
+      "video_id": "PnomNS3t2vQ",
+      "thumbnail_text": "全角色Tier 強度排名!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 09."
+    },
+    {
+      "video_id": "-8RQSG7u9eU",
+      "thumbnail_text": "全流程 釣魚支線 詳細攻略",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 09."
+    },
+    {
+      "video_id": "2h7kad3KHMo",
+      "thumbnail_text": "弓 畢業配裝 龍之箭流",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 09."
+    },
+    {
+      "video_id": "m0r3RGcCEu4",
+      "thumbnail_text": "5個完美詞條的 最強機械武器",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 09."
+    },
+    {
+      "video_id": "V-jJv3nK6CM",
+      "thumbnail_text": "最強料理 食譜推薦!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 09."
+    },
+    {
+      "video_id": "amJjOk6T8nE",
+      "thumbnail_text": "無限刷寶珠! 100%會被修",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 09."
+    },
+    {
+      "video_id": "iFh5DH-PtfA",
+      "thumbnail_text": "超簡單! 無限速刷指定素材",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 09."
+    },
+    {
+      "video_id": "hyeucehHzPs",
+      "thumbnail_text": "新手攻略 10大實用技巧",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 09."
+    },
+    {
+      "video_id": "5knohccudpE",
+      "thumbnail_text": "必拿神器! 力量&守護之護符",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 10."
+    },
+    {
+      "video_id": "emorncrJMyM",
+      "thumbnail_text": "新手攻略 10大必學實用技巧",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 10."
+    },
+    {
+      "video_id": "RnXIEjYYa_s",
+      "thumbnail_text": "TOP5 新手開荒武器推薦",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 10."
+    },
+    {
+      "video_id": "u7vDEc-6Uy4",
+      "thumbnail_text": "瘋了吧! 動作+海盜 全都縫了",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 10."
+    },
+    {
+      "video_id": "Nym5gxSCOus",
+      "thumbnail_text": "3月必玩! 10款最新強作",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 10."
+    },
+    {
+      "video_id": "K5e0HxftqLU",
+      "thumbnail_text": "撞球 一次出桿全難度 完全攻略",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 10."
+    },
+    {
+      "video_id": "CgE5iZ0hMN0",
+      "thumbnail_text": "將棋 突破考驗+殘局 完全攻略",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 10."
+    },
+    {
+      "video_id": "t_qVSBIxjGg",
+      "thumbnail_text": "法環新作! 魂類+肉鴿+大逃殺 能好玩嗎?",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 10."
+    },
+    {
+      "video_id": "N64NfW9srPo",
+      "thumbnail_text": "買之前 要知道的 10件事",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 10."
+    },
+    {
+      "video_id": "y3luZEFlaJU",
+      "thumbnail_text": "買之前 要知道的 10件事",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 10."
+    },
+    {
+      "video_id": "2kc_0Qtp7Hs",
+      "thumbnail_text": "荒野の雙劍 又帥又中二",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 10."
+    },
+    {
+      "video_id": "0eP2pQ6OP8o",
+      "thumbnail_text": "荒野の大劍 GP招式超強!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 10."
+    },
+    {
+      "video_id": "0riI24oXmZI",
+      "thumbnail_text": "簡單暴力 重弩槍 新手逃課神器!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 11."
+    },
+    {
+      "video_id": "fFMIyChgfm8",
+      "thumbnail_text": "新魔物! 第2次公測 更新內容懶人包",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 11."
+    },
+    {
+      "video_id": "FzV9Y3z7lvI",
+      "thumbnail_text": "2月必玩! 10款最新強作",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 11."
+    },
+    {
+      "video_id": "boyASpcOWfw",
+      "thumbnail_text": "赤兔馬GET! 最簡單無腦的逃課打法攻略",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 11."
+    },
+    {
+      "video_id": "rZupd0NWiUY",
+      "thumbnail_text": "藏超深! 隱藏真結局 逆天改命觸發條件一次看",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 11."
+    },
+    {
+      "video_id": "BopbgmqD55k",
+      "thumbnail_text": "全10種獲取攻略 最強畢業隱藏武器!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 11."
+    },
+    {
+      "video_id": "QFninzHC0d8",
+      "thumbnail_text": "新手攻略 10大必學實用技巧!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 11."
+    },
+    {
+      "video_id": "omDUAeI8f2U",
+      "thumbnail_text": "2025年必玩! 25款遊戲大作推薦",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 11."
+    },
+    {
+      "video_id": "fxfWKh0Fk0A",
+      "thumbnail_text": "5套! 幻遊島新牌組",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 11."
+    },
+    {
+      "video_id": "etKzvmVaZmw",
+      "thumbnail_text": "連戰最強流派 1套打通全部!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 11."
+    },
+    {
+      "video_id": "_u06kA9UeBM",
+      "thumbnail_text": "重大更新! 全新內容詳細介紹",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 11."
+    },
+    {
+      "video_id": "EpD_t92K2Rc",
+      "thumbnail_text": "鹹魚大翻身!? 5大真實心得",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 11."
+    },
+    {
+      "video_id": "3RbTDkIGPRk",
+      "thumbnail_text": "隱藏卡夢幻GET! 課了多少?",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 12."
+    },
+    {
+      "video_id": "EOrFumJ9W2E",
+      "thumbnail_text": "5套! 最強平民牌組",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 12."
+    },
+    {
+      "video_id": "xPgCthgm3WE",
+      "thumbnail_text": "12月必玩! 10款最新強作",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 12."
+    },
+    {
+      "video_id": "ulYC51ZD_fM",
+      "thumbnail_text": "史無前例的年度遊戲名單!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 12."
+    },
+    {
+      "video_id": "3nb0TEhiCkM",
+      "thumbnail_text": "超級爛? 50%勝率不到",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 12."
+    },
+    {
+      "video_id": "ChVy8nOBG_c",
+      "thumbnail_text": "帶雷丘才強! 皮卡丘最強牌組!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 12."
+    },
+    {
+      "video_id": "SFy3epoQ_hk",
+      "thumbnail_text": "火爆猴&鐮刀盔 極致快攻平民牌組",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 12."
+    },
+    {
+      "video_id": "jUtsYO-Mez8",
+      "thumbnail_text": "買之前 要知道的 10件事",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 12."
+    },
+    {
+      "video_id": "-cS_uJX-FIE",
+      "thumbnail_text": "5套! 強勢牌組推薦",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 12."
+    },
+    {
+      "video_id": "03zqJL4wkU8",
+      "thumbnail_text": "荒野の狩獵笛 1秒5個音符!?",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 12."
+    },
+    {
+      "video_id": "meJ4Ny3Obi0",
+      "thumbnail_text": "荒野の充能斧 紅斧超OP!!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 12."
+    },
+    {
+      "video_id": "PeG_HmOEN58",
+      "thumbnail_text": "荒野の弓 逆天加強",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 12."
+    },
+    {
+      "video_id": "ICZ8jQNOs80",
+      "thumbnail_text": "荒野の太刀 到底有多強!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 13."
+    },
+    {
+      "video_id": "fv2qBp4Y3So",
+      "thumbnail_text": "11月必玩! 10款最新強作",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 13."
+    },
+    {
+      "video_id": "ZlN_F2ieQO0",
+      "thumbnail_text": "TOP10 最好玩小遊戲排名",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 13."
+    },
+    {
+      "video_id": "Re1BBPSNJ7s",
+      "thumbnail_text": "如何取得 末日史書 最強畢業武器!!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 13."
+    },
+    {
+      "video_id": "7JSfTyoIIJw",
+      "thumbnail_text": "追隨者完全攻略",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 13."
+    },
+    {
+      "video_id": "Yso7oAgZBbA",
+      "thumbnail_text": "如何解鎖 終極原型 全角色原型推薦",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 13."
+    },
+    {
+      "video_id": "HP5fZmdvlnI",
+      "thumbnail_text": "無限白嫖 做一次賺18000",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 13."
+    },
+    {
+      "video_id": "bSTCmmkH9is",
+      "thumbnail_text": "9/6的宴會 不要約她 會後悔!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 13."
+    },
+    {
+      "video_id": "WwEy-vEisUA",
+      "thumbnail_text": "千萬不要打! 掛機刷怪聖地 獲取強力裝備",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 13."
+    },
+    {
+      "video_id": "tEGC_rZ5-n8",
+      "thumbnail_text": "自動恢復MP 超容易錯過 隱藏飾品",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 13."
+    },
+    {
+      "video_id": "HM4afxAd0g8",
+      "thumbnail_text": "新手攻略 10大必學實用技巧",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 13."
+    },
+    {
+      "video_id": "qcJyBRdKPr0",
+      "thumbnail_text": "輕鬆又效率 掛機刷錢 刷經驗!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 13."
+    },
+    {
+      "video_id": "YKlE1bjtvLc",
+      "thumbnail_text": "94 媒體評分 天下第一RPG",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 14."
+    },
+    {
+      "video_id": "BRCjdKyC4FU",
+      "thumbnail_text": "新手序章 完美開局 5大重點",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 14."
+    },
+    {
+      "video_id": "zXl7jzmSRhQ",
+      "thumbnail_text": "買之前 要知道的 10件事",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 14."
+    },
+    {
+      "video_id": "QKzTT8TUX5E",
+      "thumbnail_text": "全服裝完整蒐集攻略",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 14."
+    },
+    {
+      "video_id": "5ma64hbZzjM",
+      "thumbnail_text": "隱藏招式 10個你還不知道的",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 14."
+    },
+    {
+      "video_id": "tzF6kNntUkM",
+      "thumbnail_text": "最強複製品 TOP5",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 14."
+    },
+    {
+      "video_id": "wOcJgY1JKY4",
+      "thumbnail_text": "超實用! 開局必拿 10種複製品",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 14."
+    },
+    {
+      "video_id": "s28C-c84RX0",
+      "thumbnail_text": "新手攻略 10大實用技巧",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 14."
+    },
+    {
+      "video_id": "ls247wKZpzE",
+      "thumbnail_text": "神作確定! 5小時真實心得",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 14."
+    },
+    {
+      "video_id": "-dyoroUQOyA",
+      "thumbnail_text": "完全做壞! 無敵不死流 80%傷害減免",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 14."
+    },
+    {
+      "video_id": "i295D4cblNQ",
+      "thumbnail_text": "十月必玩! 10款最新強作",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 14."
+    },
+    {
+      "video_id": "tBEHg3icZsg",
+      "thumbnail_text": "拿了嗎? 進二周目前 5件必做的事",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 14."
+    },
+    {
+      "video_id": "_jeuJt6LR4Q",
+      "thumbnail_text": "5個你還不知道的 實用技巧",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 15."
+    },
+    {
+      "video_id": "o2TTsZDK5bU",
+      "thumbnail_text": "二周目必玩 最爽流派 毛猴秒殺流",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 15."
+    },
+    {
+      "video_id": "4fC9tjiPHA8",
+      "thumbnail_text": "錯過就沒了! 全遊戲易遺漏總整理",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 15."
+    },
+    {
+      "video_id": "veGVWg0MZWw",
+      "thumbnail_text": "4個掉落率最低的防具 超稀有裝備",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 15."
+    },
+    {
+      "video_id": "-8G1jpgUPBc",
+      "thumbnail_text": "買之前 要知道的 10件事",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 15."
+    },
+    {
+      "video_id": "zF-wPSF3kzs",
+      "thumbnail_text": "5個你還不知道的 隱藏招式",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 15."
+    },
+    {
+      "video_id": "IVvYr9Q9Onc",
+      "thumbnail_text": "第六章 花果山 全隱藏BOSS 詳細攻略",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 15."
+    },
+    {
+      "video_id": "sPxRW_hAB7M",
+      "thumbnail_text": "一定不要錯過 最強金丹 +20全屬性",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 15."
+    },
+    {
+      "video_id": "cd0_y1NKrJg",
+      "thumbnail_text": "第五章 火焰山 全隱藏BOSS 詳細攻略",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 15."
+    },
+    {
+      "video_id": "qxO-S3MIA-o",
+      "thumbnail_text": "超稀有變身技能! 錯過要等下周目",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 15."
+    },
+    {
+      "video_id": "3J1E2eMaVs0",
+      "thumbnail_text": "TOP10 最強精魄排名",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 15."
+    },
+    {
+      "video_id": "dYFZD_4g1H4",
+      "thumbnail_text": "玲瓏內丹 最快刷法 3個速刷地點",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 15."
+    },
+    {
+      "video_id": "UIGy_k425Uc",
+      "thumbnail_text": "值得買嗎? 6個優缺點大解析",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 16."
+    },
+    {
+      "video_id": "-HkqawYpHWQ",
+      "thumbnail_text": "TOP10 最強BOSS排名",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 16."
+    },
+    {
+      "video_id": "IONvoIMkcsY",
+      "thumbnail_text": "第四章 盤絲嶺 全隱藏BOSS 詳細攻略",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 16."
+    },
+    {
+      "video_id": "YXs8JpzXQGM",
+      "thumbnail_text": "最強流派 簡單暴力 1棍秒殺BOSS!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 16."
+    },
+    {
+      "video_id": "WKcuEHPTYPo",
+      "thumbnail_text": "無限回血! 無限飛天! 無限分身! 3個超離譜BUG盤點",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 16."
+    },
+    {
+      "video_id": "mBL-wSKcQQI",
+      "thumbnail_text": "第三章 小西天 全隱藏BOSS 詳細攻略",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 16."
+    },
+    {
+      "video_id": "8XcJHOG3c68",
+      "thumbnail_text": "最速刷錢刷經驗 1分鐘狂賺6000",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 16."
+    },
+    {
+      "video_id": "NH_0q8absdQ",
+      "thumbnail_text": "前期推薦 簡單強力 棍花流派配點攻略",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 16."
+    },
+    {
+      "video_id": "e98hh2mmdzw",
+      "thumbnail_text": "黑神話悟空 新手攻略 10大實用技巧",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 16."
+    },
+    {
+      "video_id": "YuTUVvqQd4g",
+      "thumbnail_text": "必拿法寶「定風珠」 3個隱藏妖王位置",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 16."
+    },
+    {
+      "video_id": "jdM_uzXA_Eo",
+      "thumbnail_text": "藏超深! 錯過就沒了 2個黑風山隱藏妖王",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 16."
+    },
+    {
+      "video_id": "k5tYREV0OvI",
+      "thumbnail_text": "九月必玩! 15款遊戲推薦",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 16."
+    },
+    {
+      "video_id": "z3Y7Zj0CDyY",
+      "thumbnail_text": "82分? 媒體評測 優缺點一次看",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 17."
+    },
+    {
+      "video_id": "neMO-09jux8",
+      "thumbnail_text": "最值得期待的 5大妖王戰",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 17."
+    },
+    {
+      "video_id": "t8OhC0JsMd0",
+      "thumbnail_text": "黑神話悟空 最終預告 5大重點",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 17."
+    },
+    {
+      "video_id": "pjDfRozdlp0",
+      "thumbnail_text": "最新預告!! 5個小細節",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 17."
+    },
+    {
+      "video_id": "obVpOWZlRVo",
+      "thumbnail_text": "不是魂類? 開放世界? 買之前10件事",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 17."
+    },
+    {
+      "video_id": "R3oTkk6sJb0",
+      "thumbnail_text": "八月必玩! 10款最新遊戲介紹",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 17."
+    },
+    {
+      "video_id": "SMpOsHqExGU",
+      "thumbnail_text": "新手必看! 8個實用小技巧",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 17."
+    },
+    {
+      "video_id": "cUt5KqyKtiU",
+      "thumbnail_text": "腐敗大斧 超暴力中毒流!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 17."
+    },
+    {
+      "video_id": "RdnnUUP9PE0",
+      "thumbnail_text": "TOP5 最強防具排名",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 17."
+    },
+    {
+      "video_id": "HgF2ZAbL2wE",
+      "thumbnail_text": "最恐怖BOSS 癲火之王路線攻略",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 17."
+    },
+    {
+      "video_id": "iA9zw-uXJ0A",
+      "thumbnail_text": "TOP5 最強輪椅流派",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 17."
+    },
+    {
+      "video_id": "kggW7orTK4w",
+      "thumbnail_text": "火焰騎士 黑夜劍士 完整支線任務詳細攻略",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 17."
+    },
+    {
+      "video_id": "QDRZkT-PHMU",
+      "thumbnail_text": "完整流程 詳細攻略 尤彌爾支線任務",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 18."
+    },
+    {
+      "video_id": "ZuKDc1yiAt0",
+      "thumbnail_text": "骨灰+祈禱 最強! 輕鬆單挑BOSS",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 18."
+    },
+    {
+      "video_id": "h7nRsFgc0Vs",
+      "thumbnail_text": "花蕾聖女蘿蜜娜 BOSS路線走法",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 18."
+    },
+    {
+      "video_id": "m7CxdOqwD-E",
+      "thumbnail_text": "休里耶支線 詳細流程攻略",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 18."
+    },
+    {
+      "video_id": "dQJ4ga8qTIQ",
+      "thumbnail_text": "開局就能拿 逃課武器! 古鐵隕石大劍取得攻略",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 18."
+    },
+    {
+      "video_id": "es_YVITV0jk",
+      "thumbnail_text": "血怪手臂 DLC逃課神器 T0最強出血流",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 18."
+    },
+    {
+      "video_id": "HAXpcBRXA7A",
+      "thumbnail_text": "我稱之為 DLC最帥 穿刺者矛獲取攻略",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 18."
+    },
+    {
+      "video_id": "DwMSsB5iePc",
+      "thumbnail_text": "幽影之地 地圖碎片 全位置攻略",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 18."
+    },
+    {
+      "video_id": "YbYPH5cMaz4",
+      "thumbnail_text": "又帥又強! DLC最帥武器TOP1",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 18."
+    },
+    {
+      "video_id": "OIrpU1wACWs",
+      "thumbnail_text": "失色武器 獵龍大刀 DLC開局就能拿!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 18."
+    },
+    {
+      "video_id": "BCdYvHBjRg0",
+      "thumbnail_text": "簡單模式 啟動! 10個幽影樹碎片位置",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 18."
+    },
+    {
+      "video_id": "HAjRHwXCr58",
+      "thumbnail_text": "超出預期! Switch直面會 10款重點新遊戲",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 18."
+    },
+    {
+      "video_id": "JCpjqHHEeco",
+      "thumbnail_text": "7月份必玩! 10款新遊戲推薦",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 19."
+    },
+    {
+      "video_id": "H9UTfZFgnLw",
+      "thumbnail_text": "DLC全類型新武器 動畫展示和詳細介紹!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 19."
+    },
+    {
+      "video_id": "Kew75RnAfy8",
+      "thumbnail_text": "跳崖刷錢 1分鐘10萬 1.10版本可用",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 19."
+    },
+    {
+      "video_id": "Paq_ygd7MKY",
+      "thumbnail_text": "懶人包 DLC新增內容一次看",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 19."
+    },
+    {
+      "video_id": "G5LvbWBMg9g",
+      "thumbnail_text": "買之前 必需知道的 8件事",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 19."
+    },
+    {
+      "video_id": "bFGcZ1mIveI",
+      "thumbnail_text": "超稀有! 如何獲取白色耀西?",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 19."
+    },
+    {
+      "video_id": "6PvoU2MBawg",
+      "thumbnail_text": "6月份必玩 10款新遊戲推薦",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 19."
+    },
+    {
+      "video_id": "fYX7Y5-Np1U",
+      "thumbnail_text": "法杖攻略 2套通關構築",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 19."
+    },
+    {
+      "video_id": "Y3E1DLqDqfQ",
+      "thumbnail_text": "破關評測心得 值得入手嗎?",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 19."
+    },
+    {
+      "video_id": "lPxS8DkTJDE",
+      "thumbnail_text": "如何獲得第1隻 動物使魔",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 19."
+    },
+    {
+      "video_id": "nB_MC8QosIA",
+      "thumbnail_text": "新手必看 5個開荒實用技巧",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 19."
+    },
+    {
+      "video_id": "_jYCK6D7dk8",
+      "thumbnail_text": "前期重要資源! 全房間獎勵一次了解",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 19."
+    },
+    {
+      "video_id": "nQAMQnAR1DU",
+      "thumbnail_text": "100%成功 五萬盧恩無限刷",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 20."
+    },
+    {
+      "video_id": "RdA-YvapMdA",
+      "thumbnail_text": "五月份必玩 10款新遊戲推薦",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 20."
+    },
+    {
+      "video_id": "KtKKPRqUgq8",
+      "thumbnail_text": "好玩嗎? Fae Farm 6個優缺點老實說",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 20."
+    },
+    {
+      "video_id": "3w7LqBHHdK8",
+      "thumbnail_text": "10個你還不知道的 實用技巧",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 20."
+    },
+    {
+      "video_id": "0DqSzcfvoyM",
+      "thumbnail_text": "強力實用 10個前期必學法術",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 20."
+    },
+    {
+      "video_id": "CxhVbm95_6w",
+      "thumbnail_text": "財富自由 最簡單扒竊教學",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 20."
+    },
+    {
+      "video_id": "Lab3Vqs2C4k",
+      "thumbnail_text": "背包整理 5個必學小技巧",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 20."
+    },
+    {
+      "video_id": "JiOtEuAQgkg",
+      "thumbnail_text": "新手必看 角色創建攻略",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 20."
+    },
+    {
+      "video_id": "IINhMvwHHJ4",
+      "thumbnail_text": "最強套裝 80防禦1.3倍攻擊",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 20."
+    },
+    {
+      "video_id": "lB-YHex4YxA",
+      "thumbnail_text": "新手懶人包 10個實用知識",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 20."
+    },
+    {
+      "video_id": "ZD_FLXlwYGs",
+      "thumbnail_text": "魂之賢者 5個實用技巧",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 20."
+    },
+    {
+      "video_id": "jOe9qA9vZ_k",
+      "thumbnail_text": "龍素材 4條龍機制詳解",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 20."
+    },
+    {
+      "video_id": "1ky2r095hKk",
+      "thumbnail_text": "實用武器 10把隨身必備",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 21."
+    },
+    {
+      "video_id": "aL1LPJdlvpA",
+      "thumbnail_text": "倒轉乾坤 10個超乎想像的用法",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 21."
+    },
+    {
+      "video_id": "Vx4c6NgJrYQ",
+      "thumbnail_text": "闇之塊 3分鐘全面了解",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 21."
+    },
+    {
+      "video_id": "krvqj2B-eRc",
+      "thumbnail_text": "10個你還不知道的 實用知識",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 21."
+    },
+    {
+      "video_id": "suct3v81Qs0",
+      "thumbnail_text": "素材刷新機制解析 血月? 時間?",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 21."
+    },
+    {
+      "video_id": "avYBTzhOzQs",
+      "thumbnail_text": "星星碎片 出現機制&大量取得方法",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 21."
+    },
+    {
+      "video_id": "i-3KTtVbQEg",
+      "thumbnail_text": "深度解析 10個細節與彩蛋",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 21."
+    },
+    {
+      "video_id": "UTXqPAAThfY",
+      "thumbnail_text": "10分鐘賺錢效率排名 刷怪 打獵 挖礦 敲鐘",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 21."
+    },
+    {
+      "video_id": "gyyDWj096Lg",
+      "thumbnail_text": "岩石巨人 5個打法技巧",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 21."
+    },
+    {
+      "video_id": "CKWN7EdYxes",
+      "thumbnail_text": "雷鳴之島 如何解除暴風圈?",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 21."
+    },
+    {
+      "video_id": "_gJJASPUwiU",
+      "thumbnail_text": "MARIO THEME",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 21."
+    },
+    {
+      "video_id": "JHUTyodanLc",
+      "thumbnail_text": "隨身必備 3種實用料理",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 21."
+    },
+    {
+      "video_id": "nmEG682PpA4",
+      "thumbnail_text": "TOP5 最難神廟",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 22."
+    },
+    {
+      "video_id": "cqm7ay8u780",
+      "thumbnail_text": "西諾克斯 5個戰鬥技巧",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 22."
+    },
+    {
+      "video_id": "6Mleo0ynEYs",
+      "thumbnail_text": "機制詳解 血月必做的4件事",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 22."
+    },
+    {
+      "video_id": "pThcCsKyEzY",
+      "thumbnail_text": "最強型態! 大師之劍機制詳解",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 22."
+    },
+    {
+      "video_id": "wY1NzRehijU",
+      "thumbnail_text": "7個 瘴氣之手 戰鬥技巧",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 22."
+    },
+    {
+      "video_id": "RZvpYpHTHSE",
+      "thumbnail_text": "左納尼烏姆 高效挖礦",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 22."
+    },
+    {
+      "video_id": "vXS-IYbNc5M",
+      "thumbnail_text": "10個 遊戲細節",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 22."
+    },
+    {
+      "video_id": "MPwm277vLGs",
+      "thumbnail_text": "TOP5 最強武器排名",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 22."
+    },
+    {
+      "video_id": "vSaGT_0_Wj8",
+      "thumbnail_text": "無封面大字",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 22."
+    },
+    {
+      "video_id": "fcdxxZSOLtA",
+      "thumbnail_text": "告別腐蝕武器 黑影機制詳解",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 22."
+    },
+    {
+      "video_id": "vXP59bnzYzk",
+      "thumbnail_text": "輕鬆簡單 三種擊殺三頭龍方法",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 22."
+    },
+    {
+      "video_id": "Qw08R8-T2qE",
+      "thumbnail_text": "鑲嵌之形 吉烏可烏每神廟",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 22."
+    },
+    {
+      "video_id": "kW5eLQjYL2I",
+      "thumbnail_text": "無封面大字",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 23."
+    },
+    {
+      "video_id": "rUZy0a0zw0s",
+      "thumbnail_text": "最實用載具",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 23."
+    },
+    {
+      "video_id": "1drD-_ZGSC8",
+      "thumbnail_text": "無封面大字",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 23."
+    },
+    {
+      "video_id": "099_cPt_Pz4",
+      "thumbnail_text": "水之神殿 攻略",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 23."
+    },
+    {
+      "video_id": "6bTpx2NXO50",
+      "thumbnail_text": "浮游砲 自動跟隨!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 23."
+    },
+    {
+      "video_id": "sO7yYHhoGKo",
+      "thumbnail_text": "無封面大字",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 23."
+    },
+    {
+      "video_id": "3L0Nru_FZOI",
+      "thumbnail_text": "一跳跳到空島! 隱藏密技",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 23."
+    },
+    {
+      "video_id": "JFiGi_D2JVo",
+      "thumbnail_text": "無封面大字",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 23."
+    },
+    {
+      "video_id": "au-OU75sOBM",
+      "thumbnail_text": "無封面大字",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 23."
+    },
+    {
+      "video_id": "YnSY4IIYHJ8",
+      "thumbnail_text": "無封面大字",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 23."
+    },
+    {
+      "video_id": "lnp70cIIpZs",
+      "thumbnail_text": "TOP5 盾牌 餘料建造",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 23."
+    },
+    {
+      "video_id": "4YWE-6RQGgA",
+      "thumbnail_text": "無封面大字",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 23."
+    },
+    {
+      "video_id": "QiCTlrJIsHw",
+      "thumbnail_text": "TOP5 弓箭 附加素材",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 24."
+    },
+    {
+      "video_id": "mCujcJodzdw",
+      "thumbnail_text": "無封面大字",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 24."
+    },
+    {
+      "video_id": "8ToFAX9TEZw",
+      "thumbnail_text": "一刀874 全遊戲最高傷害",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 24."
+    },
+    {
+      "video_id": "mXPdZcZ5oOI",
+      "thumbnail_text": "進入地底前... 必須知道的8個小知識",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 24."
+    },
+    {
+      "video_id": "QDhP8rcWGcE",
+      "thumbnail_text": "無封面大字",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 24."
+    },
+    {
+      "video_id": "fT74nuARmE8",
+      "thumbnail_text": "複製BUG 無限裝備",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 24."
+    },
+    {
+      "video_id": "5WSH8tmFv1g",
+      "thumbnail_text": "無封面大字",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 24."
+    },
+    {
+      "video_id": "ou0T4fxf4H8",
+      "thumbnail_text": "最離譜BUG! 無限金錢無限素材",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 24."
+    },
+    {
+      "video_id": "Vhi2zO3Tv04",
+      "thumbnail_text": "無封面大字",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 24."
+    },
+    {
+      "video_id": "0MT9GPYHC1c",
+      "thumbnail_text": "火之神殿 攻略",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 24."
+    },
+    {
+      "video_id": "VJvYY1ax4E0",
+      "thumbnail_text": "無封面大字",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 24."
+    },
+    {
+      "video_id": "0F3yCCimH-s",
+      "thumbnail_text": "無封面大字",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 24."
+    },
+    {
+      "video_id": "-opKvYpWQm4",
+      "thumbnail_text": "墜落之勇 歐羅奇烏姆神廟",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 25."
+    },
+    {
+      "video_id": "-UYZNo4Tyk4",
+      "thumbnail_text": "無封面大字",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 25."
+    },
+    {
+      "video_id": "SLbmVvMhyC0",
+      "thumbnail_text": "速刷紅寶石 前期賺錢攻略",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 25."
+    },
+    {
+      "video_id": "LmRy5gj-Beo",
+      "thumbnail_text": "煙霧彈! 忍術",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 25."
+    },
+    {
+      "video_id": "MPgJ3lp5Fg4",
+      "thumbnail_text": "超實用! 隱藏能力藍圖",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 25."
+    },
+    {
+      "video_id": "PSkjnp310TM",
+      "thumbnail_text": "最強! 大師之劍獲取攻略",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 25."
+    },
+    {
+      "video_id": "g9-PR4Uoj4E",
+      "thumbnail_text": "搖搖晃晃 姆薩諾奇拉神廟攻略",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 25."
+    },
+    {
+      "video_id": "YUDsZtEC2nE",
+      "thumbnail_text": "新手開荒 五個小技巧",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 25."
+    },
+    {
+      "video_id": "pyl_oVylvNs",
+      "thumbnail_text": "最強! 鬼神套裝全攻略",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 25."
+    },
+    {
+      "video_id": "HXK_3bMd49k",
+      "thumbnail_text": "急凍蓋拉 風之神殿BOSS攻略",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 25."
+    },
+    {
+      "video_id": "53GyPx70tpA",
+      "thumbnail_text": "風之神殿 五道鎖位置攻略",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 25."
+    },
+    {
+      "video_id": "4cp75QRVX6E",
+      "thumbnail_text": "初始空島 四大神廟攻略",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 25."
+    },
+    {
+      "video_id": "n0HxTpfstak",
+      "thumbnail_text": "固定之物 馬亞奇諾烏神廟攻略",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 26."
+    },
+    {
+      "video_id": "YJOUPrR2f0E",
+      "thumbnail_text": "六個戰鬥操作技巧 新手必學!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 26."
+    },
+    {
+      "video_id": "SJhxV5SLppc",
+      "thumbnail_text": "六大能力介紹",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 26."
+    },
+    {
+      "video_id": "iO47CPGg-CM",
+      "thumbnail_text": "最終宣傳片 完整分析",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 26."
+    },
+    {
+      "video_id": "yFrh3aPz77c",
+      "thumbnail_text": "NETFLIX 必玩的 三款免費遊戲",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 26."
+    },
+    {
+      "video_id": "rj2RWDFaBJ0",
+      "thumbnail_text": "一天賺十萬 前期賺錢攻略",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 26."
+    },
+    {
+      "video_id": "BGTKnHL1zCM",
+      "thumbnail_text": "高分冠軍攻略 撒豆比賽",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 26."
+    },
+    {
+      "video_id": "I0phJ6AHC9w",
+      "thumbnail_text": "買之前必看! 新版差異有哪些?",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 26."
+    },
+    {
+      "video_id": "eTxwDjv8DDg",
+      "thumbnail_text": "最強武器! 歷戰裝備攻略",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 26."
+    },
+    {
+      "video_id": "MoB4Cv1tiiU",
+      "thumbnail_text": "最強! 全十星魔物收集",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 26."
+    },
+    {
+      "video_id": "snyvim1b4aw",
+      "thumbnail_text": "必出 EXP100倍!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 26."
+    },
+    {
+      "video_id": "rNFM62D4kXo",
+      "thumbnail_text": "商人刷錢法 輕鬆100萬!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 26."
+    },
+    {
+      "video_id": "M6NLJ2yg4_A",
+      "thumbnail_text": "武器大師 全神器收集",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 27."
+    },
+    {
+      "video_id": "8d7cUJtR-nM",
+      "thumbnail_text": "速刷經驗 練等攻略",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 27."
+    },
+    {
+      "video_id": "CveBEVbLLTM",
+      "thumbnail_text": "發明家完全攻略",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 27."
+    },
+    {
+      "video_id": "1XDh-Tde5wY",
+      "thumbnail_text": "10分鐘賺3萬 前期賺錢攻略",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 27."
+    },
+    {
+      "video_id": "j6f95K9Vd1Y",
+      "thumbnail_text": "稀有貓 捕捉攻略",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 27."
+    },
+    {
+      "video_id": "5mw7J6bam_E",
+      "thumbnail_text": "滿級魔物前期抓捕攻略 全體攻擊9999!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 27."
+    },
+    {
+      "video_id": "YvujXUNbdys",
+      "thumbnail_text": "刷JP必拿神裝",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 27."
+    },
+    {
+      "video_id": "G5zmxGYMI8k",
+      "thumbnail_text": "玩之前必看! 選誰開局最好?",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 27."
+    },
+    {
+      "video_id": "39iboO416eo",
+      "thumbnail_text": "最讓人驚喜的 五個彩蛋",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 27."
+    },
+    {
+      "video_id": "xmMXB7mZTI8",
+      "thumbnail_text": "關於裝備的 所有知識",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 27."
+    },
+    {
+      "video_id": "1TqYHWiiy8I",
+      "thumbnail_text": "梅林的試煉 九大謎題",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 27."
+    },
+    {
+      "video_id": "KpSx3uK9aCY",
+      "thumbnail_text": "新手必看 八個實用攻略",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 27."
+    },
+    {
+      "video_id": "k_1A26Wezjo",
+      "thumbnail_text": "魔杖 如何挑選?",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 28."
+    },
+    {
+      "video_id": "Fd8bpfjSbM0",
+      "thumbnail_text": "四大學院 選哪個好?",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 28."
+    },
+    {
+      "video_id": "XNX9ai1sdQw",
+      "thumbnail_text": "霍格華茲 絕對會雷?",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 28."
+    },
+    {
+      "video_id": "18mV4hUhdmE",
+      "thumbnail_text": "懶人包 五大遊戲亮點",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 28."
+    },
+    {
+      "video_id": "3d476Diz2ws",
+      "thumbnail_text": "新手必看 八個實用攻略",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 28."
+    },
+    {
+      "video_id": "7ew0YbOImxA",
+      "thumbnail_text": "VS",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 28."
+    },
+    {
+      "video_id": "-MuYuXYC_j0",
+      "thumbnail_text": "讓人期待的 五個要素",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 28."
+    },
+    {
+      "video_id": "SpIJVZUsoFk",
+      "thumbnail_text": "TOP5 正妹女角",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 28."
+    },
+    {
+      "video_id": "L7st_Pi20tM",
+      "thumbnail_text": "沒有人知道的 六個冷知識",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 28."
+    },
+    {
+      "video_id": "QF95DQGGJhk",
+      "thumbnail_text": "三明治原理 完全解析!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 28."
+    },
+    {
+      "video_id": "9kk8Delmg2E",
+      "thumbnail_text": "TOP5 最大寶可夢",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 28."
+    },
+    {
+      "video_id": "jylUL3SWCM0",
+      "thumbnail_text": "這鯉魚超搞心態 無限成長!! 超過鯉魚1穿3",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 28."
+    },
+    {
+      "video_id": "hDIZDJ00Gc0",
+      "thumbnail_text": "對戰無恥新招式",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 29."
+    },
+    {
+      "video_id": "7CFRxn7XIxk",
+      "thumbnail_text": "TOP5 最難入手寶可夢",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 29."
+    },
+    {
+      "video_id": "q7VIYILELno",
+      "thumbnail_text": "你應該早點知道的 10件事",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 29."
+    },
+    {
+      "video_id": "u8jEnTuML44",
+      "thumbnail_text": "全屬性太晶爆發",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 29."
+    },
+    {
+      "video_id": "ul9re2z8hVI",
+      "thumbnail_text": "破關心得 玩到一半竟然哭了",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 29."
+    },
+    {
+      "video_id": "slDLuDxWvnM",
+      "thumbnail_text": "多人遊玩介紹 超大三明治!! 還有...多人生蛋?",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 29."
+    },
+    {
+      "video_id": "1YyeCXEyXEc",
+      "thumbnail_text": "前期賺錢攻略 十分鐘賺五萬!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 29."
+    },
+    {
+      "video_id": "sp9LKOJuK58",
+      "thumbnail_text": "掛機刷等 又輕鬆又效率!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 29."
+    },
+    {
+      "video_id": "3R3vrSqEQ40",
+      "thumbnail_text": "哪裡取得三明治食譜? 食力效果介紹!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 29."
+    },
+    {
+      "video_id": "Sjucc5Z0Zpo",
+      "thumbnail_text": "找不到百變怪和索羅亞? 一招輕鬆識破!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 29."
+    },
+    {
+      "video_id": "e-GEoodhqeo",
+      "thumbnail_text": "TOP10 前期必抓寶可夢!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 29."
+    },
+    {
+      "video_id": "nQtHyMWEoNU",
+      "thumbnail_text": "新手開荒攻略 八個重點一次看!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 29."
+    },
+    {
+      "video_id": "0Klw1JHkQp8",
+      "thumbnail_text": "女神攻略 我要跟女神結婚!!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 30."
+    },
+    {
+      "video_id": "Ed9z0CX5E3s",
+      "thumbnail_text": "五星農作物攻略 不用種子機也可以?",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 30."
+    },
+    {
+      "video_id": "mQd2luFH2tg",
+      "thumbnail_text": "破關心得 不玩後悔?回憶滿滿!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 30."
+    },
+    {
+      "video_id": "CwPOa-r3KEg",
+      "thumbnail_text": "克魯波克魯 18種秘密道具一次看!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 30."
+    },
+    {
+      "video_id": "Mb8MrsfylCI",
+      "thumbnail_text": "四分鐘一百金屬碎片! 礦場刷素材攻略",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 30."
+    },
+    {
+      "video_id": "u1M7ONCJG4o",
+      "thumbnail_text": "如何解鎖 人類火車套裝組? 跑得飛快!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 30."
+    },
+    {
+      "video_id": "nFlrspb_ieo",
+      "thumbnail_text": "前期賺錢攻略 超賺!",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 30."
+    },
+    {
+      "video_id": "v6VDw53UzmA",
+      "thumbnail_text": "胖虎說我的馬是笨馬?",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 30."
+    },
+    {
+      "video_id": "fpUmDXEAW7c",
+      "thumbnail_text": "新手開荒 攻略技巧",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 30."
+    },
+    {
+      "video_id": "OdLhf6XeLSw",
+      "thumbnail_text": "3D版星露谷物語?",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 30."
+    },
+    {
+      "video_id": "_UXv7n23VTQ",
+      "thumbnail_text": "挑戰星露谷物語速通... 排名世界第一!?",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 30."
+    },
+    {
+      "video_id": "rMrqcOORZko",
+      "thumbnail_text": "體驗版心得 雙人模式好玩!?",
+      "thumbnail_text_source": "manual_youtube_channel_review",
+      "thumbnail_notes": "Batch 30."
+    }
+  ]
+}

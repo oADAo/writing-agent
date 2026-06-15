@@ -13,6 +13,7 @@
 ## Query Log
 - 查詢平台 / 站點：
 - 語圈：
+- opencli command：
 - 使用關鍵字：
 - 找到的候選 Shorts：
 - 是否納入主結論：

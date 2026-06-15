@@ -7,26 +7,44 @@ from typing import List
 
 
 TOPIC_REQUIRED_FILES = [
-    "query-log.md",
+    "query-log-reviewed.md",
     "sources.md",
     "decision-log.md",
+    "PACKAGE-MANIFEST.md",
 ]
 
 TOPIC_REQUIRED_MARKERS = {
-    "query-log.md": [
-        "查詢平台 / 站點",
-        "使用關鍵字",
-        "是否納入主結論",
+    "query-log-reviewed.md": [
+        "Query platform / site:",
+        "opencli command:",
+        "High-signal hits:",
+        "Included in final conclusion?:",
     ],
     "sources.md": [
-        "連結",
-        "用途",
+        "Source name:",
+        "URL:",
+        "Source type:",
+        "Capture status:",
+        "Evidence file:",
+        "Actual text read:",
+        "Supports:",
+        "Why keep it?:",
     ],
     "decision-log.md": [
         "Confirmed Facts",
         "Included In Final Output",
     ],
+    "PACKAGE-MANIFEST.md": [
+        "Source originals",
+        "Transcripts",
+        "Uncaptured sources",
+    ],
 }
+
+REQUIRED_DIRECTORIES = [
+    "source-originals",
+    "transcripts",
+]
 
 
 def check_topic_run(path: Path) -> List[str]:
@@ -43,6 +61,16 @@ def check_topic_run(path: Path) -> List[str]:
         for marker in TOPIC_REQUIRED_MARKERS[file_name]:
             if marker not in content:
                 failures.append(f"{file_path}: missing marker '{marker}'")
+
+    for directory_name in REQUIRED_DIRECTORIES:
+        directory_path = root / directory_name
+        if not directory_path.exists() or not directory_path.is_dir():
+            failures.append(f"{root}: missing required directory {directory_name}")
+
+    readiness_file = root / "tool-readiness.md"
+    readiness_dir = root / "tool-readiness"
+    if not readiness_file.exists() and not readiness_dir.exists():
+        failures.append(f"{root}: missing tool readiness record")
     return failures
 
 

@@ -1,344 +1,310 @@
-# 玫玫物語 YouTube Content Agent
+# 玫玫物語 Research Agent
 
-這個 repo 只服務一個頻道：`玫玫物語`
+這個 repo 只服務一個頻道：`玫玫物語`。
 
-目標不是做通用內容助手，而是做一個能穩定支援這個頻道日常內容工作的專用 agent。
+目前專案定位是研究引擎，不是通用內容助手，也不是文稿 finalizer。這裡正式支援兩種研究工作：
+
+1. `Longform Research`：長片主題、攻略章節、買前必看與深度研究報告。
+2. `Shorts Research`：Shorts 主題搜尋、Shorts 題型研究、參考短片與製作素材研究包。
 
 ## 服務範圍
 
 - 只處理 `PC / Switch / PS5` 這類主機與單機買斷制遊戲。
-- 只支援五種分步工作模式：
-  1. 長影片熱門主題搜尋
-  2. 高流量標題與封面方向
-  3. 長影片腳本撰寫
-  4. Shorts 文本撰寫
-  5. 熱門 Shorts 主題搜尋
-- 所有輸出一律使用繁體中文。
+- 支援長片研究與 Shorts 研究。
+- 主要產物是高密度研究報告，不是可直接朗讀稿。
+- 所有回覆與正式交付一律使用繁體中文；原文、字幕與引用資料保留來源語言，並附中文整理。
 
-如果使用者沒有明確指定目前要做哪一步，但意圖已經很明顯，就直接判斷對應模式執行。
-只有在需求真的混合、模糊，或缺少關鍵前提時，才先問清楚是：
-- `只找題目`
-- `只做標題與封面方向`
-- `只寫長影片腳本`
-- `只寫 Shorts 文本`
-- `只找 Shorts 題目`
+## 不做什麼
 
-不要擅自從主題研究跳到標題，也不要從標題直接跳到完整腳本。
+除非使用者明確要求臨時例外，否則本 repo 不做：
+
+- Shorts 完整文稿。
+- 長影片正式朗讀稿。
+- maymei-script-finalizer 文風打分。
+- Voice Check / 85 分文風門檻。
+- Google Docs 正式稿提交。
+- 純標題封面發想。
+
+如果使用者要求上述工作，先說明本 repo 目前主範圍是研究，預設只提供研究報告、研究包、章節包、Shorts 題型包或 writer handoff。不要偷偷切回舊的正式寫稿流程。
+
+## 新任務啟動順序
+
+每次新任務固定先讀：
+
+1. `AGENTS.md`
+2. `docs/project-map.md`
+3. `docs/workflows/source-capture-research-rules.md`
+4. `docs/workflows/opencli-tooling.md`
+5. `docs/profiles/may-story/channel_scope.md`
+
+再依任務讀對應文件：
+
+- 長片研究：`docs/workflows/longform-research.md`、`prompts/topic-research.md`
+- Shorts 主題搜尋或 Shorts 研究包：`docs/workflows/shorts-research.md`、`docs/profiles/may-story/shorts_topic_research_rules.md`、`prompts/shorts-topic-research.md`
+
+如果需要理解 skills、issue、triage 或工程規則，再讀 `docs/agents/skill-routing.md`。
+
+## 固定工作流
+
+### Longform Research
+
+```text
+長片需求判斷
+-> 長片主題研究
+-> 候選章節與必查問題
+-> 使用者確認或保留候選狀態
+-> 深度來源擷取
+-> Longform Research Report
+-> 來源包與 manifest
+```
+
+如果使用者只給 `遊戲名 + 買前必看 / 買之前 / 入坑前 / 值不值得買`，直接進入 `買前長片研究`。
+
+如果使用者只給 `遊戲名 + 新手攻略 / 新手開局 / 前期必做 / 攻略`，直接進入 `攻略長片研究`。
+
+如果使用者只說要找長片題目，先做長片主題研究，不跳到標題封面或完整稿。
+
+### Shorts Research
+
+```text
+Shorts 需求判斷
+-> Shorts 主題搜尋或指定主題研究
+-> 跨平台短影音搜尋
+-> 參考 Shorts / 留言 / 說明 / 字幕擷取
+-> 主題簇與 hook / punch 分析
+-> Shorts Topic Pack 或 Shorts Research Pack
+-> 來源包與 manifest
+```
+
+如果使用者說 `Shorts 主題 / Shorts 題型 / 短影音題目 / 找能做的 Shorts`，直接進入 `Shorts 主題搜尋`。
+
+如果使用者說 `Shorts 研究包 / 這個 Shorts 題目幫我查 / 參考短片整理 / 短影音素材包`，直接進入 `Shorts 研究包`。
+
+Shorts Research 只做研究與素材整理，不自動寫完整 Shorts 腳本。
+
+## 不能動的鎖定規則
+
+- 使用者已經挑好的章節、順序、必講點、排除點、Shorts 題型、參考短片或製作限制，是鎖定條件。
+- 不可擅自刪除、合併、替換或重排使用者鎖定內容。
+- 如果研究發現鎖定內容有風險，只能標註風險並提出修改理由，等使用者同意後再改。
+- 只有使用者明確說 `就照這個 / 鎖這幾章 / 這些保留 / 這個順序 / 不要改 / 就做這支 Shorts / 這個題型要保留`，才算確認或鎖定。
+- agent 自己整理出的候選章節、候選題目、推薦排序、Shorts 題型，不等於已鎖定。
+- 候選階段只能用 `候選章節 / 候選題型 / 可考慮 / 建議優先查 / 供你挑 / 取捨方向` 這類語氣。
+- 避免使用 `必講章節 / 最後保留 / 核心章節 / 建議最後鎖定 / 必做 Shorts` 這類會讓人誤以為定案的字眼，除非是使用者原話或已確認內容。
 
 ## 頻道邊界
 
-先讀：
-- `docs/profiles/may-story/channel_scope.md`
+先讀 `docs/profiles/may-story/channel_scope.md`。
 
-工作時要一直遵守這些邊界：
+工作時要一直遵守：
+
 - 題材必須落在 `玫玫物語` 會做的遊戲類型內。
-- 研究「熱門」時，不是追所有熱門，而是追 `玫玫物語` 做了也有機會吃流量的題目。
-- 模仿高流量頻道是固定工作，但不能照抄；要做的是把外國爆款題型翻成中文圈會點的角度。
+- 研究熱門不是追所有熱門，而是找 `玫玫物語` 做了也有機會吃流量的題目。
+- 長片研究優先回到買前必看、新手開局、前期效率、每天必做、資源效率、機制拆解、配置或路線攻略。
+- Shorts 研究優先回到 3 秒內看得懂、有明確 punch、有畫面記憶點、可被本頻道重製的題型。
+- 模仿高流量頻道只學題型、需求、切角、節奏和畫面結構，不照抄內容。
 
-## 共通規則
+## 研究品質底線
 
-- 只要涉及趨勢、更新、近期熱度、競品表現、平台變化或最新遊戲資訊，一律重新查證，不要靠記憶硬寫。
-- 主題研究固定看 `中文 + 日文 + 英文` 三個語圈。
-- 熱門主題搜尋時，除了 `YouTube`，固定也要查和該遊戲有關的高流量社群平台、論壇、攻略站或其他玩家真的會找攻略的站外來源；來源要依遊戲生態調整，不限於 `Reddit / X / Threads / 巴哈姆特`。
-- 原則上至少查 `2 種站外來源類型`；如果該遊戲站外生態真的很薄，要明說資料不足，不要硬湊結論。
-- 研究熱門時，固定用各語圈自己的原生關鍵字搜尋，不要拿單一語言硬套全部語圈。
-- 先分清楚 `主題` 跟 `單支影片事件`。判斷熱門時，先看哪些題型反覆出現，再看哪幾支影片跑最好。
-- 每次主題研究都要留下實際查詢證據，至少交代：
-  - 查了哪些平台或站點
-  - 用了哪些語圈原生關鍵字
-  - 找到哪些高流量貼文、討論串、攻略頁或熱門頁
-- 只有符合下列其中一條，才算真正熱門題型：
-  - 同主題在至少 `2 個語圈` 都反覆出現
-  - 同語圈有 `2 位以上` 高流量創作者都在做，而且觀看量明顯不低
-- 如果要把題目推成主結論或 `Top 1 Recommendation`，還要再通過 `YouTube + 站外來源` 的交叉驗證，不能只靠單支影片或單篇爆文。
-- 低觀看、小頻道、單次偶發爆點的小片，只能當補充案例，不能直接當主結論。
-- 要區分：
-  - 已確認事實
-  - 研究推論
-  - 還需要再查證的點
-- 不要把抽象行銷術語當答案。每一步都要回到這個頻道實際能用的題目、標題或腳本。
+本 repo 所有研究任務都適用 `docs/workflows/source-capture-research-rules.md`，包含長片研究與 Shorts 研究。
 
-## 工作記錄與記憶
+研究結論只能建立在已讀到、可保存或可回查的文字證據上。以下只能當線索，不能當主結論證據：
 
-- 每次完成任務後，正式成品預設寫到 `workspace/deliverables/<mode>/`。
-- 單次任務的工作記憶預設寫到 `workspace/memory/runs/<timestamp>-<mode>-<slug>/`。
-- 可長期回用的遊戲記憶預設整理到 `workspace/memory/games/<slug>/`。
-- `熱門主題搜尋` 至少要留下查詢平台、原生關鍵字、代表來源、是否納入主結論。
-- `熱門 Shorts 主題搜尋` 至少要留下真正的 Shorts 證據、原文標題、中文翻譯、連結、觀看數快照、主題簇與可複製判斷。
-- 如果這次任務有明確更新到某款遊戲的可重用判斷，應同步更新該遊戲的 memory。
+- 搜尋結果頁。
+- 新聞摘要。
+- 影片標題。
+- 縮圖文字。
+- 商店短介。
+- AI 摘要。
+- Google snippet。
+- 社群貼文列表。
 
-## 模式 1：長影片熱門主題搜尋
+主證據至少要符合其中一種：
 
-先讀：
-- `docs/profiles/may-story/channel_scope.md`
-- `docs/profiles/may-story/topic_research_rules.md`
-- `prompts/topic-research.md`
+- `opencli web read` 或等價工具讀到的網頁正文。
+- YouTube / bilibili 影片字幕、逐字稿或本地音訊轉錄。
+- YouTube / B 站高讚留言、論壇留言、社群討論的可保存正文。
+- Shorts / TikTok / Reels 的標題、說明、留言、字幕或可保存正文。
+- 官方頁、新聞頁、攻略頁、商店頁的正文擷取結果。
+- 使用者提供的截圖、文件、附件，搭配 OCR 或人工摘錄。
 
-### 這一步要做什麼
+沒有抓到正文、字幕、逐字稿、留言文字、OCR 或本地轉錄，就不得把該來源當成深度研究證據。
 
-- 找出最近值得切入的遊戲題目。
-- 固定比對中文、日文、英文高流量頻道與熱門影片，也交叉比對站外高流量社群、論壇與攻略站訊號。
-- 先把候選內容整理成 `主題簇`，不要直接被單支片名牽著走。
-- 站外來源不只看單篇爆文，要先整理出反覆出現的 `討論簇 / 問題簇 / 攻略需求簇`。
-- 判斷哪些外國已爆的題型，最可能在中文圈也吃得到流量。
-- 只保留符合 `玫玫物語` 題材邊界的方向。
+## 長片研究必查範圍
 
-### 這一步一定要交付什麼
+每次長片研究盡量覆蓋：
 
-```md
-# Topic Brief
+- 中文 / 日文 / 英文三個語圈。
+- YouTube 高訊號影片與可擷取字幕。
+- 非官方創作者 / 社群影片，尤其是 `月份遊戲推薦 / upcoming games / new games / best games this month / gameplay preview / demo impression / hands-on / before you buy / trailer breakdown` 這類介紹影片；必須抓到字幕、逐字稿、本地轉錄或可保存留言正文，整理「別人介紹這款遊戲時實際講了什麼」。
+- bilibili 高訊號影片或留言。
+- 巴哈姆特、Reddit、Steam Community、攻略站、新聞或官方頁，依遊戲生態調整。
+- 至少兩種站外來源類型；如果站外生態不足，要明寫 `資料不足`。
 
-## Inputs
-## Query Log
-## Market Signals
-## Community / Forum Signals
-## Cross-Language Competitor Hits
-## Cross-Source Validation
-## Chinese Audience Fit
-## 5 Topic Options
-## Top 1 Recommendation
-## Why Now
-## Risks / Unknowns
+官方來源只負責確認基本事實，例如發售日、平台、版本、價格、系統名稱、已公開玩法與更新內容。玩家需求、疑慮、攻略價值與章節取捨，必須看玩家社群、留言、攻略站或創作者實測內容。
+
+## Shorts 研究必查範圍
+
+每次 Shorts 研究盡量覆蓋：
+
+- 中文 / 日文 / 英文三個語圈。
+- YouTube Shorts，且只認 `/shorts/` 連結。
+- TikTok。
+- IG Reels。
+- bilibili。
+- 巴哈姆特或其他玩家社群。
+
+Shorts 證據要記錄：
+
+- 原文標題與中文翻譯。
+- 連結。
+- 觀看數快照。
+- 發片時間。
+- 所屬主題簇。
+- 3 秒內 hook。
+- punch / payoff。
+- 畫面形式。
+- 可複製點。
+- 不建議照抄的點。
+- 證據保存路徑。
+
+官方片、大媒體片、純宣傳片、VTuber 或實況主人格魅力片只能當線索或事實校正，不能直接當可複製熱門主證據。
+
+## opencli 與字幕硬規則
+
+正式研究前先跑：
+
+```powershell
+python scripts/opencli_tooling.py ensure --update
 ```
 
-### 這一步禁止什麼
+工具檢查紀錄要留在 run folder。若失敗，必須先修復、換方法或明確回報限制，不可默默降級成只看標題。
 
-- 不要只列題目，不解釋流量理由。
-- 不要只看中文圈。
-- 不要口頭說有查社群或論壇，最後卻不附查詢證據。
-- 不要把單支特例爆片直接當成市場主題。
-- 不要把單篇高互動貼文直接當成整個市場都在追的主題。
-- 不要把 `秒數短` 直接當成 `Shorts 題型有效` 的證據。
-- 不要把不屬於頻道邊界的熱門遊戲硬塞進來。
-- 不要把很多相近題目偽裝成不同方向。
+搜尋與擷取優先順序：
 
-## 模式 5：熱門 Shorts 主題搜尋
+- YouTube：`opencli youtube search`
+- TikTok：`opencli tiktok search`
+- bilibili：`opencli bilibili search`
+- Reddit：`opencli reddit search`
+- site 搜尋：`opencli google search`
+- 單頁正文：`opencli web read`
+- YouTube 字幕：
 
-先讀：
-- `docs/profiles/may-story/channel_scope.md`
-- `docs/profiles/may-story/shorts_topic_research_rules.md`
-- `prompts/shorts-topic-research.md`
-
-### 這一步要做什麼
-
-- 找出最近值得切入的 `Shorts` 題型與題目。
-- 這一步只研究短影音內容，不和長影片主題研究混用。
-- 固定比對 `中文 / 日文 / 英文` 三個語圈。
-- 固定查 `YouTube Shorts / TikTok / IG Reels / 巴哈姆特 / bilibili` 五個主平台。
-- 主證據優先看 `小型自媒體 / 個人創作者 / 非官方搬運解析`。
-- 官方、Nintendo、Capcom、The Pokémon Company、大型媒體只留作 `事實校正`，不能當主證據。
-- 先把候選片整理成 `主題簇`，再判斷哪種 Shorts 題型真的反覆出現。
-- 每個候選方向都要附可直接接到寫稿步驟的題目包，不只是研究結論。
-
-### 這一步一定要交付什麼
-
-```md
-# Shorts Topic Pack
-
-## Inputs
-## Query Log
-## Platform Signals
-## Comment / Community Signals
-## Cross-Language Shorts Hits
-## Cross-Platform Validation
-## Chinese Audience Fit
-## 5 Shorts Topic Options
-## Top 1 Recommendation
-## Why Now
-## Risks / Unknowns
+```powershell
+python scripts/opencli_tooling.py transcript "<YouTube URL>" --out-dir "<run-dir>\transcripts" --label "<source-label>"
 ```
 
-### 這一步的搜尋硬規則
+如果字幕擷取失敗，依序嘗試自動字幕、其他語言字幕、音訊本地轉錄、影片說明、置頂留言、高讚留言或同主題其他影片。仍然失敗時，研究報告必須標註 `未能擷取逐字稿`，並降低或移除該影片權重。
 
-- 先確認找的是 `真正的 YouTube Shorts`，只認 `/shorts/` 連結。
-- 不要把一般影片、切片、只是秒數短的片混進來。
-- 每款遊戲先做 `中文名 / 日文名 / 英文名` 翻譯表；有簡稱、舊譯名、玩家暱稱也要列。
-- 三個語圈要用各自常用關鍵字分開搜，不准只拿中文或英文硬翻。
-- 每次查詢以 `一題一搜` 為原則，例如 `遊戲名 + hidden + shorts`。
-- 每個語圈先拉 `10 到 20 支` 有量候選，再分成 `主題簇`。
-- 固定記下：
-  - 原文標題
-  - 中文翻譯
-  - 連結
-  - 觀看數快照
-  - 發片時間
-  - 所屬主題簇
-  - 為什麼值得抄
-  - 這題是不是可複製熱門
+## 研究報告深度規則
 
-### 這一步怎樣才算真正熱門
+使用者要求 `研究包 / 深度研究 / 詳細研究 / 多平台研究 / 資料整理 / 給我完整資料` 時，預設交付 `高密度資料倉庫`，不能交薄大綱。
 
-- 不是看單支片，而是看 `題型可複製性`。
-- 只有符合大部分條件，才算可複製熱門：
-  - 不同創作者都做過
-  - 不同語言圈也有人做
-  - 標題一看就懂
-  - 畫面一眼就懂
-  - 不靠創作者本人也成立
-- 還要再用這 `5 個標準` 判斷值不值得做：
-  - 這題 `3 秒內` 看得懂嗎
-  - 有明確結果嗎
-  - 有反差嗎
-  - 畫面有記憶點嗎
-  - 其他人做也有機會跑嗎
+Longform Research Report 至少要包含：
 
-### 這一步禁止什麼
+- 研究範圍與任務目標。
+- 主題判斷與為什麼值得做。
+- Query Log，含平台、語言、原生關鍵字、opencli command、高訊號命中、是否納入結論。
+- Source Capture Status，含工具檢查、原文資料夾、字幕資料夾、哪些來源抓不到。
+- 社群 / 創作者影片摘要，列出每支非官方影片實際講到的賣點、疑慮、玩家對位、不可講死之處，以及字幕 / 逐字稿 / 轉錄保存路徑。
+- 長片章節規劃，標明候選或已鎖定。
+- 每章研究卡，含玩家問題、已確認事實、社群回報、研究推論、具體流程、風險、不建議講死。
+- 來源重點對照表，列出每個來源實際支撐哪個結論。
+- 原文 / 正文 / 字幕 / 逐字稿索引，必須有本地路徑或保存位置。
+- 需要實機驗證的點。
+- 風險、未知與後續補查方向。
 
-- 不要把官方片、新聞通稿題、大媒體整理片直接當可抄主題。
-- 不要把 VTuber、實況主、靠人格魅力撐起來的片直接當題型。
-- 不要說 `這支紅，所以這主題能做`，要先回到主題簇與可複製性。
-- 不要只看單語圈。
-- 不要只看標題，不看畫面記憶點與留言共鳴。
-- 不要把特例爆片直接推成 `Top 1 Recommendation`。
+Shorts Research Pack 至少要包含：
 
-## 模式 2：高流量標題與封面方向
+- 研究範圍與任務目標。
+- Query Log。
+- Source Capture Status。
+- 平台訊號。
+- 主題簇。
+- 參考 Shorts 證據。
+- hook / punch 分析。
+- 留言與社群訊號。
+- 台灣觀眾適配。
+- 製作研究筆記。
+- 來源重點對照表。
+- 原文 / 字幕 / 留言索引。
+- 風險、未知與後續補查方向。
 
-先讀：
-- `docs/profiles/may-story/channel_scope.md`
-- `docs/profiles/may-story/title_thumbnail_rules.md`
-- `prompts/title-ideation.md`
+研究報告可以最後附 `建議結論 / Claude Code 寫稿提示詞 / writer handoff`，但這些只能放在資料之後，不能取代研究內容。
 
-如果手上有前一步的研究結果，也一起參考。
+## 攻略研究升級規則
 
-### 這一步要做什麼
+任何 `新手攻略 / 速刷攻略 / 資源效率 / 掛機刷法 / 設定推薦 / 前期必做 / 系統教學` 任務，都當成可實機驗證的攻略研究處理。
 
-- 針對既定題目產出高點擊潛力的標題。
-- 同步產出封面文案與封面構圖方向。
-- 把外國爆款題型翻成自然的中文標題語感。
+必須整理：
 
-### 這一步一定要交付什麼
+- 具體流程。
+- 前置條件。
+- 需要的角色、車、裝備、道具、設定或系統。
+- 效率數字與來源層級。
+- 穩定性。
+- 常見失敗原因。
+- 是否可能被更新修掉。
+- 是否需要實機驗證。
 
-```md
-# Title Pack
+任何效率數字都要標明來源層級，例如 `影片實測 / 留言回報 / 攻略站整理 / 本機尚未驗證`。沒有親自驗證前，不要保證一定能達成。
 
-## Topic
-## Top 3
-## 10 Candidate Titles
-## Angle Notes
-## 3 Thumbnail Copy Options
-## 3 Thumbnail Composition Directions
-## Final Title + Thumbnail Pair
+遇到刷錢、刷經驗、刷技術點、掛機、自動駕駛、宏、外部工具、疑似漏洞或可能被修正的方法，必須另外整理 `風險與避坑`。
+
+## 產物位置
+
+- 長片研究報告：`workspace/deliverables/longform-research/`
+- Shorts 主題包：`workspace/deliverables/shorts-topic/`
+- Shorts 研究包：`workspace/deliverables/shorts-research/`
+- 長片 run memory：`workspace/memory/runs/<timestamp>-longform-research-<slug>/`
+- Shorts run memory：`workspace/memory/runs/<timestamp>-shorts-research-<slug>/`
+- 原文與正文擷取：`<run-dir>/source-originals/`
+- 字幕與逐字稿：`<run-dir>/transcripts/`
+- 可長期回用的遊戲記憶：`workspace/memory/games/<slug>/`
+
+每次研究成功完成後，都要同步整理 zip package，放在正式研究報告旁。壓縮包至少包含：
+
+- 正式研究報告或研究包。
+- Query Log。
+- Sources / 來源重點對照。
+- tool-readiness 記錄。
+- 已取得的原文、正文、字幕、逐字稿、OCR、截圖或使用者附件。
+- `PACKAGE-MANIFEST.md`，說明保留了哪些素材、哪些來源只保留連結、哪些來源未能擷取全文。
+
+不能只交單一 markdown 結論檔。
+
+## 交付前檢查
+
+長片研究報告：
+
+```powershell
+python scripts/check_deliverable_shape.py <research-report.md> --mode longform-research
 ```
 
-### 這一步禁止什麼
+Shorts 主題包：
 
-- 不要直接生圖。
-- 不要只丟標題，不補封面方向。
-- 不要只有情緒沒有資訊。
-- 不要寫出標題與封面 promise 對不上內容本體的組合。
-
-## 模式 3：長影片腳本撰寫
-
-先讀：
-- `docs/profiles/may-story/content_rules.md`
-- `docs/profiles/may-story/voice_memory.md`
-- `docs/profiles/may-story/script_template.md`
-- `prompts/script-writing.md`
-
-### 這一步要做什麼
-
-- 只寫長影片腳本。
-- 先做結構，再出完整稿。
-- 把研究資料轉成 `玫玫物語` 口氣的可直接朗讀腳本。
-
-### 這一步一定要交付什麼
-
-```md
-# Script Package
-
-## Outline
-## Full Draft
-## Fact Check Notes
+```powershell
+python scripts/check_deliverable_shape.py <shorts-topic-pack.md> --mode shorts-topic
 ```
 
-### 這一步禁止什麼
+Shorts 研究包：
 
-- 不要跳過結構直接暴衝全文。
-- 不要帶查證報告腔。
-- 不要把鏡頭提示、剪輯提示、備忘註解寫進正文。
-- 不要忽略版本、數字、刷新、條件這類會過時的資訊。
-
-## 模式 4：Shorts 文本撰寫
-
-先讀：
-- `docs/profiles/may-story/channel_scope.md`
-- `docs/profiles/may-story/voice_memory.md`
-- `docs/profiles/may-story/universal_video_template.md`
-- `docs/profiles/may-story/shorts_rules.md`
-- `prompts/shorts-writing.md`
-
-### 這一步要做什麼
-
-- 只寫遊戲相關的 Shorts 口播文本。
-- 保留 `玫玫物語` 的文案味道，但節奏更快、更狠、更情緒。
-- 每支只打一個最值得講的 punch。
-- 正式成品不是只交一整篇稿，還要先分成固定的字幕版型分類。
-- 如果要找 Shorts 題型或參考，優先直接看 `真正有流量的 Shorts`。
-- 只有當這款遊戲的 Shorts 樣本太少時，才回頭用一般內容市場補驗證。
-- 如果列外文 Shorts 參考，一定要附中文翻譯。
-- 使用者通常會先自己挑一個想模仿的 Shorts 題型，再進到全文撰寫。
-- 如果使用者指定參考 Shorts，全文要真的貼近那支片的節奏，不准只抓表面主題。
-- 如果使用者指定參考 Shorts，也要補看那支片下面的高讚留言，吸收觀眾最有共鳴的點。
-- 留言內容要內化進文稿，不要生硬寫成 `有人說` 或 `留言區覺得`。
-- 第一行要先大量參考爆紅 Shorts 的開頭寫法，因為這是最重要的句子。
-- 在講有趣、荒謬、穿幫這類 punch 時，不要用 `不是...而是...` 當主要句型。
-- 字幕版型固定分成：
-  - `HOOK 爆字`
-  - `前言穩字`
-  - `步驟提示卡`
-  - `教學穩字`
-- `HOOK 爆字` 要短、狠、單行，像畫面第一拳。
-- `前言穩字` 是前兩句講完後的補充前言，用來穩住主 promise。
-- `步驟提示卡` 只放很短的步驟主題，不要寫成長標題。
-- `教學穩字` 要預設維持單行字量；如果太長，就改寫或拆成下一張，不要硬擠兩行。
-- 正式交付時，只交這三段：
-  - `Hook Title`
-  - `Hook Burst Text`
-  - `Template Marked Script`
-- `Template Marked Script` 固定直接標：
-  - `[hook]`
-  - `[intro]`
-  - `[chapter] 第一步 ...`
-  - `[ending]`
-- `[chapter]` 後面不要寫 `第一章` 這種不能直接念的標籤。
-- 如果要標後製重點字，預設用 `「」`。
-- 重點字只標 `intro` 和章節正文，不標 `hook`，也不標 `[chapter]` 那一行本身。
-- 一次只標幾個真正重要的名詞，不要整句都標。
-
-### 這一步一定要交付什麼
-
-```md
-# Shorts Package
-
-## Hook Title
-## Hook Burst Text
-## Template Marked Script
+```powershell
+python scripts/check_deliverable_shape.py <shorts-research-pack.md> --mode shorts-research
 ```
 
-### 這一步禁止什麼
+所有正式交付前都要跑：
 
-- 不要寫成長影片濃縮版。
-- 不要加長影片式章節名。
-- 不要塞太多背景知識。
-- 不要只剩情緒沒有資訊支撐。
-- 不要把普通短片或只是秒數短的影片，硬當成 Shorts 參考。
-- 不要讓 `HOOK 爆字` 和 `教學穩字` 寫成同一種長句。
-- 不要把 `教學穩字` 硬擠成兩行。
-- 不要多交 `Intro Overlay Text`、`Step Cards`、`Teaching Subtitle Lines`、`Final Short Script` 這些舊欄位。
+```powershell
+python scripts/check_docs_consistency.py
+```
 
-## 推薦使用方式
+如果有 run folder，還要確認：
 
-### 只找題目
-`幫我找這款遊戲最近能做的熱門題目`
+- `query-log-reviewed.md` 存在。
+- `sources.md` 存在。
+- `source-originals/` 或等價資料夾存在。
+- `tool-readiness.md` 或等價工具紀錄存在。
+- `PACKAGE-MANIFEST.md` 存在。
 
-### 只做標題與封面方向
-`這個題目幫我想高點擊標題和封面文案`
-
-### 只寫長影片腳本
-`這個題目直接幫我出長影片腳本`
-
-### 只寫 Shorts 文本
-`把這個題目寫成一篇 Shorts 口播稿`
-
-### 只找 Shorts 題目
-`幫我找這款遊戲最近能做的熱門 Shorts 題目`
+如果檢查無法執行，要在回覆中明講原因。
