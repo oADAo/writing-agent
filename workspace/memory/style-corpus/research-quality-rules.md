@@ -187,3 +187,33 @@
 - Do not hide reused evidence provenance. If a transcript/comment set came from a prior run, label it as reuse in the new package.
 - Do not trust only the top-level readiness booleans when the raw `opencli doctor` output says something else.
 - Do not keep chasing image-only PDF or Cloudflare-blocked text sources once official readable substitutes already cover the same claim at higher quality.
+
+## 2026-06-16 Maintenance Pass
+
+### Reusable methods confirmed from recent Gagabird + Palworld + tooling runs
+
+- When comparing two possible topics, inspect search-intent quality, not only whether results exist.
+  - If one query family yields dense攻略/新手/資源正文 and the other drifts into 代儲、儲值教學、交易站、App Store IAP lists, treat the polluted cluster as weak natural-topic demand even if it still returns many hits.
+  - Preserve that pollution evidence in `query-log-reviewed.md` so later agents can see why the topic was rejected.
+- Reuse within the same topic family is valid when the new run makes the dependency explicit.
+  - Acceptable patterns: copy the earlier successful source into the new run, or reference the earlier run path directly from `sources.md`.
+  - Silent reuse is not acceptable; later agents need to know which evidence was fresh and which was inherited.
+- Transcript success means readable text, not merely a created file.
+  - If the transcript is mojibake, empty, or only available through a wrong-language auto-caption path that does not yield readable content, downgrade it to secondary/market-signal use.
+  - Keep the broken artifact path for auditability, but do not quote it as creator evidence.
+- Noisy adjacent queries are useful for exclusion.
+  - If `guild / arena / daily` follow-up queries mostly surface other games, site shells, or dead pages, use that as evidence to exclude those subtopics from the final daily list.
+  - This is better than padding the research pack with unsupported chapter claims.
+- Comment capture should become a file when it affects the conclusion.
+  - Chat-visible `opencli youtube comments` output is enough for same-turn note-taking, but not durable enough for later reuse.
+  - If the comment materially supports buyer-fit, daily-task priority, or creator framing, persist it into the run folder before calling it package evidence.
+- Keep updater/network failures separate from actual research-tool failure.
+  - Recent tooling logs showed `yt-dlp -U` timing out while the installed `yt-dlp` version still existed and other capture steps remained usable.
+  - Log the updater failure, but judge transcript readiness from the real capture commands and saved artifacts.
+
+### Failed or lower-value patterns reinforced by this pass
+
+- Do not treat commercial-intent search pollution as proof that a topic has healthy organic demand.
+- Do not count a transcript file as usable evidence before checking that the text is readable in the needed language.
+- Do not force weak guild/arena/social-system claims into a daily guide when the deeper capture stayed noisy.
+- Do not leave comment evidence only in transient tool/chat output if the package may be reused later.
