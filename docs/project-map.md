@@ -11,21 +11,24 @@
 2. `docs/workflows/source-capture-research-rules.md`
    - 全專案研究證據規則。
    - 定義哪些來源能當主證據、抓不到正文或字幕時怎麼處理。
-3. `docs/workflows/opencli-tooling.md`
+3. `docs/workflows/research-source-acquisition.md`
+   - 研究前厚資料蒐集流程。
+   - 定義 YouTube 字幕、高讚留言、社群攻略正文與可導入爬蟲工具的優先順序。
+4. `docs/workflows/opencli-tooling.md`
    - opencli、Browser Bridge、YouTube 字幕與工具 readiness。
-4. `docs/profiles/may-story/channel_scope.md`
+5. `docs/profiles/may-story/channel_scope.md`
    - 頻道題材邊界。
-5. `docs/workflows/longform-research.md`
+6. `docs/workflows/longform-research.md`
    - 長片研究主工作流。
-6. `docs/workflows/shorts-research.md`
+7. `docs/workflows/shorts-research.md`
    - Shorts 主題搜尋與 Shorts 研究包主工作流。
-7. `prompts/topic-research.md`
+8. `prompts/topic-research.md`
    - 長片研究執行 prompt。
-8. `prompts/shorts-topic-research.md`
+9. `prompts/shorts-topic-research.md`
    - Shorts 主題搜尋執行 prompt。
-9. `templates/`
+10. `templates/`
    - 正式研究報告、Shorts 研究包與 run memory 模板。
-10. `scripts/`
+11. `scripts/`
    - opencli 批次工具與交付檢查。
 
 正式寫稿、文風 finalizer、Google Docs 正式稿提交不是主流程入口。除非使用者明確要求臨時例外，不要引用它們來執行研究任務。
@@ -38,6 +41,7 @@
 | `docs/workflows/longform-research.md` | 長片研究主流程 | 長片研究任務必讀 |
 | `docs/workflows/shorts-research.md` | Shorts 主題搜尋與研究包主流程 | Shorts 研究任務必讀 |
 | `docs/workflows/source-capture-research-rules.md` | 原文、正文、字幕、逐字稿、留言保存規則 | 研究前與交付前必讀 |
+| `docs/workflows/research-source-acquisition.md` | 厚資料蒐集、YouTube 高讚留言、GitHub 爬蟲工具建議 | 攻略 / 買前深度研究前讀 |
 | `docs/workflows/opencli-tooling.md` | opencli readiness、字幕備援 | 正式搜尋前必讀 |
 | `docs/profiles/may-story/channel_scope.md` | 頻道能不能做某題 | 判斷題材邊界先讀 |
 | `docs/profiles/may-story/topic_research_rules.md` | 長片熱門題目研究細則 | 需要更細的長片題目判斷時讀 |
@@ -66,18 +70,19 @@
 ```text
 1. 讀 AGENTS.md
 2. 讀 source-capture-research-rules.md
-3. 讀 opencli-tooling.md
-4. 讀 channel_scope.md
-5. 讀 longform-research.md
-6. 判斷長片研究類型
-7. 跑 opencli readiness
-8. 建 run folder
-9. 做跨語圈搜尋與站外來源搜尋
-10. 擷取正文、字幕、逐字稿、留言或 OCR
-11. 產生候選章節或使用者鎖定章節的研究卡
-12. 產生 Longform Research Report
-13. 打包 report、來源、字幕、query log、manifest
-14. 跑檢查並回報限制
+3. 讀 research-source-acquisition.md
+4. 讀 opencli-tooling.md
+5. 讀 channel_scope.md
+6. 讀 longform-research.md
+7. 判斷長片研究類型
+8. 跑 opencli readiness
+9. 建 run folder
+10. 做跨語圈搜尋與站外來源搜尋
+11. 擷取正文、字幕、逐字稿、留言或 OCR
+12. 產生候選章節或使用者鎖定章節的研究卡
+13. 產生 Longform Research Report
+14. 打包 report、來源、字幕、query log、manifest
+15. 跑檢查並回報限制
 ```
 
 ### Shorts Research
@@ -85,19 +90,20 @@
 ```text
 1. 讀 AGENTS.md
 2. 讀 source-capture-research-rules.md
-3. 讀 opencli-tooling.md
-4. 讀 channel_scope.md
-5. 讀 shorts-research.md
-6. 讀 shorts_topic_research_rules.md
-7. 判斷是 Shorts Topic Pack 或 Shorts Research Pack
-8. 跑 opencli readiness
-9. 建 run folder
-10. 查 YouTube Shorts / TikTok / IG Reels / bilibili / 巴哈姆特
-11. 保存標題、說明、留言、字幕、逐字稿或 OCR
-12. 分主題簇，分析 hook / punch / 畫面節奏
-13. 產生 Shorts Topic Pack 或 Shorts Research Pack
-14. 打包 report、來源、字幕、query log、manifest
-15. 跑檢查並回報限制
+3. 讀 research-source-acquisition.md
+4. 讀 opencli-tooling.md
+5. 讀 channel_scope.md
+6. 讀 shorts-research.md
+7. 讀 shorts_topic_research_rules.md
+8. 判斷是 Shorts Topic Pack 或 Shorts Research Pack
+9. 跑 opencli readiness
+10. 建 run folder
+11. 查 YouTube Shorts / TikTok / IG Reels / bilibili / 巴哈姆特
+12. 保存標題、說明、留言、字幕、逐字稿或 OCR
+13. 分主題簇，分析 hook / punch / 畫面節奏
+14. 產生 Shorts Topic Pack 或 Shorts Research Pack
+15. 打包 report、來源、字幕、query log、manifest
+16. 跑檢查並回報限制
 ```
 
 ## 要改規則時去哪裡
@@ -106,6 +112,7 @@
 - 長片研究流程：改 `docs/workflows/longform-research.md`。
 - Shorts 研究流程：改 `docs/workflows/shorts-research.md`。
 - 原文與字幕保存規則：改 `docs/workflows/source-capture-research-rules.md`。
+- 研究前厚資料蒐集與爬蟲工具建議：改 `docs/workflows/research-source-acquisition.md`。
 - opencli 或字幕備援：改 `docs/workflows/opencli-tooling.md` 與相關腳本。
 - 研究報告格式：改 `templates/deliverables/`、`scripts/check_deliverable_shape.py` 與測試。
 - 任務路由：改 `docs/agents/skill-routing.md`。

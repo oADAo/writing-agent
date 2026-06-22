@@ -2,6 +2,8 @@
 
 這份流程用來避免研究任務在 `opencli`、Browser Bridge 或 YouTube 字幕失效時，偷偷降級成只看標題。
 
+如果任務是攻略、買前必看、深度研究包或需要高讚留言驗證，先讀 `docs/workflows/research-source-acquisition.md`。那份文件定義 YouTube 熱門留言、字幕、Reddit / Steam / 巴哈 / bilibili 正文與可參考 GitHub 工具的優先順序。
+
 ## Before Topic Research
 
 先跑：

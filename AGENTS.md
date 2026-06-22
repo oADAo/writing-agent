@@ -34,8 +34,9 @@
 1. `AGENTS.md`
 2. `docs/project-map.md`
 3. `docs/workflows/source-capture-research-rules.md`
-4. `docs/workflows/opencli-tooling.md`
-5. `docs/profiles/may-story/channel_scope.md`
+4. `docs/workflows/research-source-acquisition.md`
+5. `docs/workflows/opencli-tooling.md`
+6. `docs/profiles/may-story/channel_scope.md`
 
 再依任務讀對應文件：
 

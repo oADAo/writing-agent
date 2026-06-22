@@ -1,6 +1,6 @@
 # 玫玫物語研究品質硬規則
 
-更新日期：2026-05-29
+更新日期：2026-06-22
 
 使用者明確要求：以後任何研究都要做真正的研究，不可以只做搜尋結果或表面功夫。
 
@@ -217,3 +217,214 @@
 - Do not count a transcript file as usable evidence before checking that the text is readable in the needed language.
 - Do not force weak guild/arena/social-system claims into a daily guide when the deeper capture stayed noisy.
 - Do not leave comment evidence only in transient tool/chat output if the package may be reused later.
+
+## 2026-06-17 Maintenance Pass
+
+### Reusable methods confirmed from recent Elliot prelaunch chapter-pool + six-chapter deep-dive runs
+
+- When `opencli` search succeeds but later `web read`, YouTube, bilibili, or Reddit adapters break because Browser Bridge drops, keep the run alive with a hybrid capture chain instead of treating the whole pass as failed.
+  - Discovery layer: preserve the successful `opencli google search` / `youtube search` command and raw result file in `query-log-reviewed.md`.
+  - Body-capture layer: pivot to browser/web tooling for readable正文 and save the raw page locally as HTML.
+  - Audit layer: record the pivot explicitly in `sources.md` so later agents know which sources came from native opencli capture and which came from fallback body capture.
+- Prelaunch guide research is strongest when three evidence layers stay separate instead of being flattened together.
+  - Japanese guide sites define the candidate system/chapter buckets.
+  - Traditional Chinese official pages, Bahamut, and Taiwan media translate those systems into Maymei audience wording and pain points.
+  - Creator transcripts explain what other people actually spend time teaching, repeating, or warning about.
+  - Do not let any single layer pretend to cover all three jobs.
+- Subtitle failure needs a three-way classification, not a single `transcript failed` bucket.
+  - `No subtitles available`: lower the source weight now and only restore it if later local transcription or comments add usable text.
+  - `HTTP 429 / temporary fetch block`: keep it as a scheduled retry target; this is a capture problem, not proof the video is low-value.
+  - `BROWSER_CONNECT / bridge drop after search`: preserve the search hit, then move capture to another channel instead of erasing the source from the run history.
+- Candidate-only / prewriting packs should explicitly protect writer freedom when the user has buckets but has not locked final chapter order.
+  - Add a short boundary note that the pack is a material warehouse, not a final structure.
+  - Keep phrases like `素材桶`, `候選`, `可合併`, `可重排`, and avoid accidental finality language.
+  - This prevents later writing turns from mistaking research grouping for a user-approved sequence.
+- Player-reported farming numbers can be useful, but only when the package keeps the source layer and verification debt visible at the same time.
+  - Acceptable use: cite Bahamut / Reddit / creator claims as `玩家回報` or `創作者實測線索`.
+  - Required companion: add a matching `Needs in-game verification` item for the same number or route.
+  - Do not upgrade prelaunch player numbers into tutorial certainty just because multiple players repeat them.
+
+### Failed or lower-value patterns reinforced by this pass
+
+- Do not discard a whole run as unusable merely because Browser Bridge died after the discovery phase; the fallback body-capture path is still durable if it is logged clearly.
+- Do not let Japanese guide-site density silently overwrite Taiwan audience-fit evidence; chapter usefulness and local wording are not the same question.
+- Do not collapse `no subtitles`, `HTTP 429`, and `BROWSER_CONNECT` into one generic transcript failure label.
+- Do not present research grouping buckets as if they were already the user's locked final chapter order.
+
+## 2026-06-18 Maintenance Pass
+
+### Reusable methods confirmed from recent Palworld + 嘎嘎奇兵 + crawler/tooling runs
+
+- Treat tool readiness as a chronological evidence chain, not a single boolean verdict.
+  - First record the wrapper header result from `tool-readiness.md`.
+  - Then read the later `opencli doctor`, smoke-test, and transcript blocks in order.
+  - If the header says `doctor_ok=False` / `transcript_ok=False` but later command blocks show the extension connected and searches succeeding, mark the run as `wrapper false negative after recovery` instead of treating the whole toolchain as dead.
+- The currently verified Browser Bridge recovery path is still:
+  - `opencli.cmd daemon restart`
+  - relaunch the saved OpenCLI Browser Bridge Edge profile
+  - re-run `opencli.cmd doctor` until `Extension: connected` and `Connectivity: connected`
+  - keep those doctor blocks in the run folder as the real readiness proof
+- Recent local tool evaluation confirms a more explicit YouTube capture stack.
+  - First-choice transcript probe: `youtube-transcript-api`
+  - Default repo helper: `python scripts/opencli_tooling.py transcript "<url>" --out-dir "<run-dir>\\transcripts" --label "<label>"`
+  - Subtitle fallback: direct `yt-dlp --write-subs --write-auto-subs`
+  - Popular comments first choice: `yt-comment-dl`
+  - `opencli youtube comments` remains useful as smoke test or secondary fallback, but high-value comment evidence should be persisted to file.
+- Reddit discovery should stay split from Reddit evidence capture.
+  - If native `opencli reddit search` is noisy or polluted, switch to `opencli google search "site:reddit.com <game> <topic>"`, then deep-read the exact thread.
+  - Only the saved Reddit正文 / replies count as evidence; the noisy native search result should be logged as a discovery failure, not promoted into source coverage.
+- Bilibili subtitle failures now need two separate downgrade labels.
+  - `AUTH_REQUIRED`: keep `video` metadata and comments, then look for logged-in subtitle tools or outside audio transcription.
+  - `EMPTY_RESULT`: keep metadata and comments only; do not pretend the spoken guide content was captured.
+  - In both cases, bilibili comments can support player demand or version warnings, but not the creator's exact spoken steps unless text/audio capture exists.
+- Windows URL handling remains a real evidence-risk point.
+  - URLs containing `&` or query parameters can be split by the `.cmd` wrapper, especially for Bahamut, Google Play, and some Steam / Mobile01 pages.
+  - After every escaped `web read`, verify the output title and original URL are the intended page, not a shell page or site homepage.
+- Dense research packs are more reusable when they preserve the gap between candidate volume and validated evidence volume.
+  - Keep candidate counts in the reviewed log.
+  - Keep validated-source counts in `sources.md`.
+  - Add `language-source-matrix.md` whenever the run claims three-language coverage or A/B/C coverage judgment.
+  - If the matrix is missing, treat language coverage as incomplete documentation rather than silently assuming it was done.
+- Guide/exception-topic research should keep source-family limits visible.
+  - Recent 嘎嘎奇兵 research had strong official/store and guide-site coverage, but weak Japanese / bilibili / creator-transcript depth.
+  - That shape is still usable for a locked practical guide, but the report must say the community layer is thin instead of implying full three-market validation.
+
+### Failed or lower-value patterns reinforced by this pass
+
+- Do not trust the top header or final note in `tool-readiness.md` more than the command-by-command blocks beneath it.
+- Do not count bilibili metadata + comments as if they were creator transcript evidence when subtitle capture returned `AUTH_REQUIRED` or `EMPTY_RESULT`.
+- Do not claim three-language coverage only because three-language searches were attempted; coverage is proven by saved usable sources and, ideally, `language-source-matrix.md`.
+- Do not let successful local tool evaluation stay stranded in a side run; promote proven tools like `yt-comment-dl` and `youtube-transcript-api` into the main method memory layer.
+
+## 2026-06-19 Maintenance Pass
+
+### Reusable methods confirmed from the Elliot postlaunch beginner-guide run
+
+- `今天 / 凌晨後 / 最新` 類研究要先鎖定明確時區 cutoff，再做專門的 `today-only` 補查層。
+  - 這次有效做法是先定 `2026-06-18 00:00 +08:00`，再把納入與排除來源都寫進獨立檔。
+  - 不要只看 YouTube `upload_date`、平台上的 `today` 標籤，或英文站點的當地時區時間。
+  - 即使來源本身很強，只要台灣時間落在 cutoff 之前，也要明寫排除原因，避免把「昨天深夜」誤算成「今天凌晨後」。
+- `opencli web read` 出現 `BROWSER_CONNECT 69` 時，不要把整頁直接判成失敗。
+  - 先用 `curl.exe -L` 或同級 raw 抓取把 HTML 存下來。
+  - 只有當 saved HTML 裡真的讀得到正文，並且再整理成 extracted markdown 或研究卡時，才能把它升成 `raw-body fallback` 證據。
+  - 只保存 raw HTML 但沒整理出正文重點，仍然只能算半完成保存，不算可直接寫稿的深讀證據。
+- 發售日 / 更新日當天的 guide cluster 值得單獨保留一層，因為它和一般累積研究不是同一件事。
+  - 這次 AppMedia、Dengeki、Gamerch、Bahamut、YouTube release-day clips 被集中寫進 `today-0618-after-midnight-source-sweep.md`，讓後續代理能快速知道哪些是「當日新增」而不是前幾天沿用。
+  - 這種 today-only 檔要同時記錄：cutoff、查詢詞、採用來源、降權來源、排除原因。
+- 三語圈覆蓋現在不只要有矩陣，還要把「可當結論的 today-only 證據」與「只有市場訊號的 today-only 命中」分開。
+  - 這次 Elliot run 的 `language-source-matrix.md` 把 `Japanese strong / Chinese medium-high but today-only mixed / English medium-high` 分層，這種寫法比只寫有沒有查過更有用。
+- 使用者實機補充若直接修正系統用語，必須在研究層立刻改寫敘述，不可讓舊說法繼續混用。
+  - 這次已把 `魔石碎片` 修正成「先視為隨機生成魔石資源」，並要求正式稿前再用 UI 驗證。
+  - 類似補充如果會改變章節口徑，應同輪回寫 game memory，而不是只留在 deliverable。
+
+### Failed or lower-value patterns reinforced by this pass
+
+- 不要把 `today` 或 `最新` 當成搜尋平台自己的相對時間語意；一定要換算成任務要求的本地時區 cutoff。
+- 不要因為 raw HTML 成功存下來，就假設正文已經被吸收；沒有 extracted text 或研究卡，還是不能直接拿來寫結論。
+- 不要把沒有字幕的當日中文影片升成攻略證據；它們最多只能當市場 / 觀眾問題訊號。
+- 不要讓使用者已修正的系統說法和舊的網路說法並列存在；一旦使用者補充更接近實機，就要把舊口徑降成待驗證。
+- 不要忽略 Windows 預設編碼對字幕工具的影響；遇到 `UnicodeEncodeError` / `CP950`，重跑前先設 `$env:PYTHONIOENCODING='utf-8'`。
+- 不要直接把帶引號的英文查詢丟進 `opencli.cmd` 後就信任結果；如果 PowerShell / `.cmd` 拆參數導致 Reddit 或 Steam 搜尋失敗，要把它記成命令層失敗，再改走 web discovery + body capture。
+## 2026-06-20 Maintenance Pass
+
+### Reusable methods confirmed from recent Elliot 10-chapter / Day 2 refresh / Dave Jungle seed runs
+
+- Incremental deepening packs should treat the previous accepted pack as a named retained source layer, not as invisible background memory.
+  - If the user says not to delete earlier beginner-guide research, keep the old pack in `sources.md` as `retained source layer`.
+  - New refresh work should focus on the gaps: new web bodies, new comments, new day-after corrections, or newly locked chapters.
+  - `PACKAGE-MANIFEST.md` should say whether earlier run folders were retained wholesale or specific files were copied forward.
+- Wrapper failure can now come from extension-update state, not only lost connectivity.
+  - If `python scripts/opencli_tooling.py ensure --update --run-dir <run-dir>` exits non-zero because the browser extension reports an update warning, do not immediately downgrade the whole toolchain.
+  - Read the embedded `opencli doctor` block and run direct smoke tests for `youtube search`, `google search`, `web read`, and `youtube comments`.
+  - Record the final state as `wrapper false negative from extension update warning` when direct commands work.
+- Locked-chapter refreshes should pivot from broad beginner queries to chapter-noun query families once the baseline pack already exists.
+  - Example pattern: after the base beginner pack is stable, query specific nouns such as `glass vial`, `cats`, `missable quests`, `magicite rank 5`, `Trial Sanctuary`, `spear build`, or `friendship rewards`.
+  - This keeps the refresh dense instead of re-collecting the same broad hits.
+- Candidate-only search volume deserves its own file when the pack is already dense.
+  - Keep validated evidence in `sources.md`.
+  - Move search-result-only leads into a separate file such as `sources-candidates-opencli.md`.
+  - This preserves discovery receipts without diluting the accepted evidence table.
+- Bilibili can still contribute two different supporting roles when subtitles fail.
+  - Older competitor videos with only metadata/comments are `format signal only`.
+  - Current guide-video metadata/comments can still be `player problem pool` evidence when comments expose mission-order confusion, boss friction, missing item questions, or patch concerns.
+  - Neither role upgrades into creator-spoken guide evidence unless subtitle/audio text exists.
+- Day-after refreshes do not need to rebuild every language layer from zero.
+  - If no stronger new Japanese bodies appear, explicitly keep the previous-day JP layer as primary.
+  - Add only the fresh English / Chinese / community delta, and say that in `sources.md` and the report.
+- Dense writer-facing packs stay reusable when they preserve source-layer hierarchy.
+  - `retained source layer` for prior base pack
+  - `refresh layer` for day-after or patch-day additions
+  - `new direct captures` for the current run
+  - This makes later script-writing and maintenance passes understand what is inherited versus new.
+
+### Failed or lower-value patterns reinforced by this pass
+
+- Do not treat a non-zero readiness wrapper exit as tool death when the real blocker is only an extension-update warning.
+- Do not mix competitor-format reference videos into factual evidence tables just because they are user-provided.
+- Do not rerun a full multilingual baseline on every refresh if the real need is a few chapter-specific gaps.
+- Do not let candidate-only search hits crowd the same evidence table as readable bodies, transcripts, or saved comments.
+- Do not present bilibili metadata/comment captures as if the spoken guide itself was captured.
+
+## 2026-06-21 Maintenance Pass
+
+### Reusable methods confirmed from recent Dave Jungle deep-dive / practical-chapter runs
+
+- If a stable baseline pack already exists and the user asks for more creator/community depth, create a named late-capture layer instead of flattening everything into one pile.
+  - Put the extra bodies, comments, and transcripts under `source-originals/social-supplement/` and `transcripts/social-supplement/`.
+  - If there is a later post-release or extra-hour follow-up, an `extra-hour-pass/` child folder is acceptable.
+  - `PACKAGE-MANIFEST.md` should explain why the supplement exists and what it added beyond the base pack.
+- User-provided screenshots are first-class research evidence when they show exact quest text, UI markers, or one observed trigger state.
+  - Save the original image in `source-originals/`.
+  - Add one source entry that separates `what the screenshot proves` from `what still needs outside confirmation`.
+  - Use screenshot evidence to tighten wording, especially when guide sites disagree on NPC, quest, or unlock phrasing.
+- Steam / Reddit discussion bodies should be promoted as player-pain or blocker evidence, not as official mechanics.
+  - Good uses: buyer hesitation, bug complaints, restaurant blockers, return-path confusion, time-pressure stress, feature expectations, and patch-risk chatter.
+  - Bad use: turning one complaint thread into a hard rule for exact time costs, exact progression logic, or official feature behavior.
+- Lower-authority guide hubs can stay in a dense pack, but only with a narrow role label.
+  - Valid roles: route sketch, terminology cross-check, system-shape support, or fallback explanation when stronger sources cover the same point.
+  - Invalid roles: final customer counts, universal trigger timing, exact profit rankings, or hard optimization tables without stronger corroboration.
+- When a creator source is captured but low quality, keep the downgrade evidence explicit.
+  - If the transcript/comment pair shows AI-script accusations, self-contradiction, or conflicts with stronger official/guide sources, preserve the file and state why it was downgraded.
+  - This creates a reusable `checked and rejected` record for later runs.
+
+### Failed or lower-value patterns reinforced by this pass
+
+- Do not mix late `social-supplement` captures into the same unlabeled evidence tier as the base-source layer.
+- Do not use current Steam / Reddit complaint threads as the final authority for mechanics.
+- Do not let weaker guide hubs carry exact numbers that stronger sources did not confirm.
+- Do not write `user screenshot confirms` when the screenshot only confirms one observed instance.
+- Do not silently drop a captured low-quality creator source; record the downgrade reason.
+
+## 2026-06-22 Maintenance Pass
+
+### Reusable methods confirmed from the late-completed Dave Jungle evidence layer
+
+- When a locked guide pack gets user playtest corrections after the main pack is already dense, add a dedicated `mechanic-correction-table.md` instead of burying the fix only in the deliverable.
+  - Record `Topic`, `New user result` or `User understanding / question`, `External evidence`, `Current ruling`, and `Evidence level`.
+  - This is the cleanest way to stop gift / favorite food / Auto Supply / portion-prep / quest-marker wording from drifting again in later writing turns.
+- Thick research packs are easier to audit when they preserve an explicit `claim-map.md`, not only `sources.md`.
+  - Keep status buckets such as `supported`, `limited`, `conflicted`, `needs-verification`, `user-playtest`, and `downgraded`.
+  - `user-playtest` keeps reusable user evidence without pretending it is outside confirmation.
+  - `downgraded` preserves checked-but-rejected creator sources so later agents do not accidentally resurrect them.
+- User screenshots should be promoted through the evidence layer, not left as raw attachments.
+  - Save the original image in `source-originals/`.
+  - Add a source entry that states exactly what the screenshot proves and what it does not prove.
+  - Then attach the point to `claim-map.md` or `mechanic-correction-table.md` so quest text, gift-heart markers, and similar UI clues become reusable memory.
+- A late correction sweep can use its own named source layer.
+  - `source-originals/social-supplement/mechanic-correction-pass/` is a useful pattern when the work is no longer broad discovery and is instead reconciling conflicting guide wording, base-game carryover assumptions, and user playtest corrections.
+  - This naming makes it obvious that the layer exists to repair terminology and mechanic framing, not to reopen the whole topic.
+- `source-capture-status.md` should explicitly separate wrapper/tool state from evidence state.
+  - Recent Dave evidence shows `opencli` wrapper failure, direct-command usability, user-playtest-only confirmations, and externally unconfirmed gaps can all coexist in one run.
+  - Keeping that separation prevents later agents from overstating Auto Supply, dive-time fractions, New Game starting gear, or underwater quest markers as fully externally validated.
+
+### Failed or lower-value patterns reinforced by this pass
+
+- Do not fix late mechanic drift only inside the report body; add an explicit correction layer or later agents will lose the reason for the change.
+- Do not leave screenshot or user-playtest evidence only in attachments or chat notes without connecting it to the claim map or correction table.
+- Do not assume `sources.md` alone is enough once a pack accumulates conflicts, user corrections, and downgraded creator sources.
+- Do not upgrade base-game Auto Supply text into a DLC hard fact unless the DLC behavior is separately labeled as user-playtest or otherwise revalidated.
+
+### Gap note
+
+- No newer Shorts research pattern appeared after the 2026-06-21 pass; the new reusable method evidence in this run comes almost entirely from the late-completed Dave Jungle pack.
+- Bahamut still mostly remains a search-lead layer, and Chinese creator videos without subtitles are still a weak-evidence family rather than a solved capture path.

@@ -7,8 +7,10 @@ Use this file to decide which skill, workflow, or local rule set applies before 
 1. Read `AGENTS.md`.
 2. Read `docs/project-map.md`.
 3. If the task touches sources, read `docs/workflows/source-capture-research-rules.md`.
-4. If the task uses search, captions, transcripts, or web reading, read `docs/workflows/opencli-tooling.md`.
-5. Route to the matching research workflow:
+4. If the task needs thick pre-writing evidence, high-signal comments, or crawler/tool selection, read `docs/workflows/research-source-acquisition.md`.
+5. If the task uses search, captions, transcripts, or web reading, read `docs/workflows/opencli-tooling.md`.
+6. If the user asks for pre-writing preparation, a thick research pack, complete source gathering, subtitles/comments, or multilingual evidence before drafting, use `skills/maymei-research-pack-builder/SKILL.md`.
+7. Route to the matching research workflow:
    - Longform: `docs/workflows/longform-research.md`
    - Shorts: `docs/workflows/shorts-research.md`
 
@@ -40,13 +42,14 @@ Do not route new tasks to Shorts writing, final script writing, Maymei voice sco
 
 | User intent | Use this first | Then read |
 | --- | --- | --- |
+| Any pre-writing thick research pack / complete source gathering | `skills/maymei-research-pack-builder/` | Its `references/evidence-quality-contract.md`, `references/platform-capture-playbook.md`, and `references/deliverable-contract.md` |
 | Longform game topic research | local workflow | `docs/workflows/longform-research.md`, `prompts/topic-research.md` |
 | Buy-before longform research | local workflow | `docs/workflows/longform-research.md`, `docs/profiles/may-story/channel_scope.md` |
-| Beginner guide / strategy research | local workflow | `docs/workflows/longform-research.md`, `docs/workflows/source-capture-research-rules.md` |
-| Longform deep research pack / detailed report | local workflow | `docs/workflows/longform-research.md`, `templates/deliverables/longform-research-report.md` |
+| Beginner guide / strategy research | local workflow | `docs/workflows/longform-research.md`, `docs/workflows/source-capture-research-rules.md`, `docs/workflows/research-source-acquisition.md` |
+| Longform deep research pack / detailed report | local workflow | `docs/workflows/longform-research.md`, `docs/workflows/research-source-acquisition.md`, `templates/deliverables/longform-research-report.md` |
 | Shorts topic search | local workflow | `docs/workflows/shorts-research.md`, `docs/profiles/may-story/shorts_topic_research_rules.md`, `prompts/shorts-topic-research.md` |
 | Shorts research pack / reference short analysis | local workflow | `docs/workflows/shorts-research.md`, `templates/deliverables/shorts-research-pack.md` |
-| Source capture / transcripts / web body extraction | local workflow | `docs/workflows/source-capture-research-rules.md`, `docs/workflows/opencli-tooling.md` |
+| Source capture / transcripts / web body extraction | local workflow | `docs/workflows/source-capture-research-rules.md`, `docs/workflows/research-source-acquisition.md`, `docs/workflows/opencli-tooling.md` |
 | Organize repo, clarify file responsibility | architecture review | `docs/project-map.md`, `docs/agents/*.md` |
 | Implement script or validation changes | `tdd` if behavior changes | relevant tests under `tests/` |
 | Debug failing tools or tests | `diagnose` or `systematic-debugging` | failing command output and related tests |

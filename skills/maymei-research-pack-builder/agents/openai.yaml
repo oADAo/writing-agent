@@ -1,0 +1,4 @@
+interface:
+  display_name: "Maymei Research Pack Builder"
+  short_description: "Builds objective source-backed evidence catalogs for Maymei research."
+  default_prompt: "Use $maymei-research-pack-builder to prepare a neutral evidence pack with source artifacts and a claim map. Keep writing judgments out of the evidence layer."
