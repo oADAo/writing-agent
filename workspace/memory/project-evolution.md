@@ -547,3 +547,147 @@ Scope: Re-read the repo routing docs, then compare the 2026-06-21 automation mem
 - There were no newer Shorts research examples after the 2026-06-21 pass, so this maintenance update is longform-heavy.
 - The most useful new evidence came from the late-completed Dave Jungle pack rather than from a brand-new run family; future passes should keep checking whether late package completion is surfacing new reusable layers.
 - Bahamut direct body capture still remains mostly lead-only, and Chinese no-subtitle creator videos remain a weak evidence family rather than a solved method.
+
+## 2026-06-23 Research Capability Maintenance Pass
+
+Scope: Re-read the repo routing docs, then compare the current shared memory against the fully packaged Dave Jungle run and the later script deliverable to capture only the reusable packaging rules that actually improved downstream writing reuse. No new Shorts evidence family appeared in this pass.
+
+### Files Updated
+
+- `workspace/memory/style-corpus/research-quality-rules.md`
+- `workspace/memory/project-evolution.md`
+- `C:\codex-home\automations\maymei-research-method-evolution\memory.md`
+
+### Reusable Methods Added
+
+- `PACKAGE-MANIFEST.md` is now confirmed as a first-class research-navigation layer for dense writer-facing packs.
+  - The strongest current shape is: formal report, run-file inventory, source-family summary, uncaptured/downgraded families, and a clear `Known Limits` block.
+  - The run-file inventory should call out `user-playtest-notes.md`, `claim-map.md`, `mechanic-correction-table.md`, `sources-candidates-opencli.md`, and `source-capture-status.md` so later writing can route quickly to the right evidence layer.
+  - This avoids forcing later script work to rediscover uncertainty and source status by reading the whole report end to end.
+- Late refreshes now have a better naming rule when they serve a narrow writing need instead of broad discovery.
+  - Dated plus intent-named folders such as `20260622-update`, `20260622-money-method-update`, and `20260622-weapon-recommendation-update` are easier to audit than a single catch-all supplement folder.
+  - The manifest should explain why each delta layer exists and what chapter or claim family it was meant to repair.
+  - This makes later writing or maintenance able to pull only the relevant delta instead of rescanning the full run.
+- Writer-facing uncertainty should stay mirrored in the package layer, not only the prose layer.
+  - The Dave pack-to-script path shows that `user-playtest`, `needs-verification`, `candidate-only`, and weaker-language warnings remain useful even after the research becomes a script.
+  - Keeping those labels in `Known Limits` reduces the chance that later writing upgrades Auto Supply, customer counts, Hook Gun prompts, or Chinese money-route candidates into harder claims than the evidence allows.
+
+### Failed Or Lower-Weight Methods To Avoid
+
+- Treating `PACKAGE-MANIFEST.md` as a thin archive receipt once the run has multiple evidence-control files and late correction layers.
+- Hiding narrow late refresh work inside unnamed supplement folders that do not explain whether the pass was for hotfixes, money methods, weapon advice, or another specific chapter repair.
+- Leaving uncertainty labels only in chapter prose when the package is expected to support later script writing.
+
+### Gap Report / Next Checks
+
+- No newer Shorts research package or Shorts topic pack appeared after the 2026-06-22 pass, so this update still cannot promote a new Shorts-specific method.
+- The new evidence here is mostly packaging-layer evidence from the Dave pack plus its later script reuse, not a new capture-tool breakthrough.
+- If a future pass sees another research-to-script handoff, check whether the writer actually used `PACKAGE-MANIFEST.md` plus the claim/correction files directly, or still had to fall back to the full report.
+
+## 2026-06-24 Research Capability Maintenance Pass
+
+Scope: Re-read the repo routing docs, then compare the current shared memory against the newest `20260623-user-demo-transcript-zhuanshi-zhishou` run plus nearby durable game memory. The goal was to promote only reusable local-transcription workflow lessons instead of repeating the 2026-06-23 packaging rules.
+
+### Files Updated
+
+- `workspace/memory/style-corpus/research-quality-rules.md`
+- `workspace/memory/project-evolution.md`
+- `C:\codex-home\automations\maymei-research-method-evolution\memory.md`
+
+### Reusable Methods Added
+
+- User-provided long local audio can now be treated as a first-class evidence layer when Maymei research needs demo/playtest wording but no web transcript path exists.
+  - The current verified shape is a dedicated run folder with `query-log-reviewed.md`, `sources.md`, `tool-readiness.md`, `PACKAGE-MANIFEST.md`, and a `transcripts/` bundle.
+  - This keeps user-demo or local-recording evidence inside the same reusable memory structure as normal longform research instead of leaving it as an unattached helper file.
+- Local ASR packaging now has a stronger default artifact set.
+  - Keep `timestamped.md` for citation and chapter routing.
+  - Keep `plain.txt` for fast reading/search.
+  - Keep `raw-asr.txt` so later passes can inspect pre-normalization output instead of trusting only cleaned text.
+  - Keep `segments.json` so later tooling or manual QA can re-slice exact time ranges without rerunning ASR.
+- The local-ASR readiness note should preserve inference settings, not only the output text.
+  - The newest run proved it is useful to record engine, model, device, compute type, thread count, language, VAD state, hotword use, and OpenCC normalization choice in `tool-readiness.md`.
+  - This makes later agents able to compare quality differences instead of guessing why one local transcript was cleaner than another.
+- Progress logging is now part of reusable auditability for large local transcription jobs.
+  - The current run kept `transcription-progress.log` with elapsed minutes, segment counts, and audio progress across a `01:17:02` file.
+  - That is a better default than a silent one-shot transcript because later maintenance can estimate runtime and spot stalled or low-yield jobs.
+- Spot-QA audio slices are a useful middle layer between full raw media and final transcript text.
+  - The run kept `source-originals/sample-*.wav` slices for later VAD/quality checks while leaving the original `185 MB` MP3 outside the run folder.
+  - This is a good packaging pattern when the source is large: keep the original path in `sources.md` / `PACKAGE-MANIFEST.md`, keep small QA slices locally, and avoid bloating the reusable package unless the full media is truly needed.
+
+### Evidence Used
+
+- `workspace/memory/runs/20260623-user-demo-transcript-zhuanshi-zhishou/query-log-reviewed.md`
+- `workspace/memory/runs/20260623-user-demo-transcript-zhuanshi-zhishou/sources.md`
+- `workspace/memory/runs/20260623-user-demo-transcript-zhuanshi-zhishou/tool-readiness.md`
+- `workspace/memory/runs/20260623-user-demo-transcript-zhuanshi-zhishou/transcription-progress.log`
+- `workspace/memory/runs/20260623-user-demo-transcript-zhuanshi-zhishou/PACKAGE-MANIFEST.md`
+- `workspace/memory/games/elliot-millennium-tales/20260603-beginner-guide-material-pool.md`
+
+### Failed Or Lower-Weight Methods To Avoid
+
+- Saving only one cleaned transcript file from a long local demo recording and discarding the raw ASR / segment structure.
+- Treating local ASR as reusable evidence without recording the inference settings that shaped quality.
+- Stuffing the entire large source media into every reusable run package when a source path plus QA slices is enough.
+- Leaving user-demo transcription work outside the normal run-memory structure, where later longform research cannot find or reuse it.
+
+### Gap Report / Next Checks
+
+- This pass did not surface a new multilingual source-discovery or opencli capture breakthrough; the useful new evidence was the local-ASR packaging pattern only.
+- No newer Shorts topic pack or Shorts research pack appeared after the 2026-06-23 pass, so Shorts-specific method memory still did not advance.
+- If a future run promotes a local user-demo transcript into a full longform pack, check whether the transcript also lands in the game-memory layer with explicit chapter/risk links instead of remaining a standalone transcript run.
+
+## 2026-06-25 Research Capability Maintenance Pass
+
+Scope: Re-read the repo routing docs, then scan the new `20260625-002148-longform-research-dave-diver-jungle-traffic-evidence` run, its paired longform deliverable, and the nearby `20260625-001332-topic-decision-elliot-vs-dave` comparison run. The goal was to capture only reusable methods for compact traffic-evidence research and to log the new raw-only comparison run as a gap instead of promoting it as a good template.
+
+### Files Updated
+
+- `workspace/memory/style-corpus/research-quality-rules.md`
+- `workspace/memory/project-evolution.md`
+- `C:\codex-home\automations\maymei-research-method-evolution\memory.md`
+
+### Reusable Methods Added
+
+- A compact `traffic-evidence` longform pack is now a valid formal research shape when the user asks for topic-choice proof rather than a full chapter-complete guide pack.
+  - The current minimum reusable layer is still formal: `query-log-reviewed.md`, `sources.md`, `claim-map.md`, `source-capture-status.md`, `decision-log.md`, `PACKAGE-MANIFEST.md`, a report, and a zip package.
+  - This is the right correction when a prior verbal recommendation failed the repo's evidence rules: keep the pack smaller, but do not drop the artifact chain.
+- Traffic ranking should keep `candidate-only metadata` and `validated claim-bearing evidence` explicitly separated.
+  - Use raw YouTube/Bilibili search files plus a normalized helper like `candidate-metrics.csv` only for candidate ranking and query comparison.
+  - Promote only selected videos/pages into `sources.md` after exact Bilibili `video` metadata, comments, transcripts, or readable web bodies are captured.
+  - `claim-map.md` can then state which ranking claims depend partly on candidate metadata and which are supported by read evidence.
+- Bilibili exact video metadata is a stronger traffic layer than Bilibili search score when comparing topic buckets.
+  - The 2026-06-25 Dave run used `bilibili search` for discovery, then upgraded chosen hits through `opencli.cmd bilibili video` and comment capture.
+  - That is the better default when the task is traffic-evidence topic ranking rather than broad source harvesting.
+- `web read` exit code alone is not enough to classify the capture state.
+  - The newest Dave traffic-evidence run had several `web read` calls that emitted readable bodies while still returning exit code `1`.
+  - When that happens, verify the saved markdown body and log the source as usable-with-wrapper-caveat instead of auto-failing it.
+- Tool-readiness summaries can now conflict at three different layers: header booleans, raw doctor blocks, and the final free-text note.
+  - The `20260625-001332-topic-decision-elliot-vs-dave` readiness file ended with `OpenCLI Browser Bridge is still unavailable` even though repeated later `opencli doctor` blocks showed `[OK] Extension: connected` and `[OK] Connectivity`.
+  - Future maintenance should trust the latest command blocks and direct smoke behavior over the stale header booleans or note paragraph.
+
+### Evidence Used
+
+- `workspace/memory/runs/20260625-002148-longform-research-dave-diver-jungle-traffic-evidence/query-log-reviewed.md`
+- `workspace/memory/runs/20260625-002148-longform-research-dave-diver-jungle-traffic-evidence/sources.md`
+- `workspace/memory/runs/20260625-002148-longform-research-dave-diver-jungle-traffic-evidence/claim-map.md`
+- `workspace/memory/runs/20260625-002148-longform-research-dave-diver-jungle-traffic-evidence/source-capture-status.md`
+- `workspace/memory/runs/20260625-002148-longform-research-dave-diver-jungle-traffic-evidence/PACKAGE-MANIFEST.md`
+- `workspace/memory/runs/20260625-002148-longform-research-dave-diver-jungle-traffic-evidence/decision-log.md`
+- `workspace/memory/runs/20260625-002148-longform-research-dave-diver-jungle-traffic-evidence/source-originals/candidate-metrics.csv`
+- `workspace/deliverables/longform-research/20260625-dave-diver-jungle-traffic-evidence-report.md`
+- `workspace/memory/runs/20260625-001332-topic-decision-elliot-vs-dave/tool-readiness/tool-readiness.md`
+
+### Failed Or Lower-Weight Methods To Avoid
+
+- Treating a raw comparison run with only platform JSON and `tool-readiness/` as reusable project memory.
+- Collapsing `candidate traffic metadata` and `validated evidence` into one undifferentiated source table during topic ranking.
+- Trusting Bilibili search `score` as if it were the same thing as exact video views.
+- Auto-failing `web read` captures purely from the process exit code when the saved body is readable and was actually inspected.
+- Trusting the final prose note in `tool-readiness.md` when the repeated doctor blocks show a newer connected state.
+
+### Gap Report / Next Checks
+
+- `workspace/memory/runs/20260625-001332-topic-decision-elliot-vs-dave/` is not a reusable template yet. It lacks `query-log-reviewed.md`, `sources.md`, `decision-log.md`, and any saved interpretation layer beyond raw JSON.
+- If future topic-comparison runs stay intentionally small, add at least a one-page reviewed log plus a decision note so they can feed later maintenance without reopening the raw search files.
+- The 2026-06-25 Dave run did not complete a new Reddit/Steam discussion pass, so this maintenance update does not add a new forum-deep-read method.
+- No newer Shorts topic pack or Shorts research pack appeared in this pass, so Shorts-specific method memory still remains unchanged.

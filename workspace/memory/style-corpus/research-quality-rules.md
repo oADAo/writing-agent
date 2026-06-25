@@ -428,3 +428,97 @@
 
 - No newer Shorts research pattern appeared after the 2026-06-21 pass; the new reusable method evidence in this run comes almost entirely from the late-completed Dave Jungle pack.
 - Bahamut still mostly remains a search-lead layer, and Chinese creator videos without subtitles are still a weak-evidence family rather than a solved capture path.
+
+## 2026-06-23 Maintenance Pass
+
+### Reusable methods confirmed from the Dave Jungle pack-to-script handoff
+
+- Dense research packages stay more reusable for later writing when `PACKAGE-MANIFEST.md` acts as a navigation layer, not just a zip checklist.
+  - List the run's decision files up front, especially `user-playtest-notes.md`, `claim-map.md`, `mechanic-correction-table.md`, `sources-candidates-opencli.md`, and `source-capture-status.md`.
+  - Summarize source families, uncaptured families, downgraded families, and known limits in the same file.
+  - This lets a later writing pass find what is safe, disputed, or still candidate-only without re-mining the full report first.
+- Late refresh work is easier to reuse when each delta pass gets a dated and intent-named layer instead of one generic supplement bucket.
+  - The current Dave pack proved `source-originals/20260622-update/`, `source-originals/20260622-money-method-update/`, and `source-originals/20260622-weapon-recommendation-update/` are easier to audit than dropping every late file into one folder.
+  - Use the folder name to say what changed: hotfix refresh, money-method routing, weapon recommendation repair, and similar narrow jobs.
+  - Mirror those layers in the manifest so later writing can pull only the relevant delta instead of rescanning the entire run.
+- Writer-facing packs should keep uncertainty visible in the package layer, not only in chapter prose.
+  - Preserve a `Known Limits` section in `PACKAGE-MANIFEST.md` for `user-playtest`, `needs in-game verification`, `candidate-only`, and weaker-language coverage notes.
+  - If a later script or handoff uses those points, the source status is still recoverable without reverse-engineering the report.
+  - This is especially important for Bancho Grill counts, Auto Supply behavior, Hook Gun prompts, and Chinese no-subtitle money-route candidates.
+
+### Failed or lower-value patterns reinforced by this pass
+
+- Do not treat `PACKAGE-MANIFEST.md` as a thin packing receipt once the run has claim maps, correction tables, user-playtest notes, and multiple late refresh layers.
+- Do not hide late delta passes inside unnamed supplement folders; later writing passes lose the reason those files exist.
+- Do not leave uncertainty labels only inside chapter prose when the package is expected to support later script writing or maintenance.
+
+## 2026-06-24 Maintenance Pass
+
+### Reusable methods confirmed from the local user-demo transcript run
+
+- A user-provided local recording can be stored as a normal Maymei research run instead of a one-off helper artifact.
+  - Keep `query-log-reviewed.md`, `sources.md`, `tool-readiness.md`, and `PACKAGE-MANIFEST.md` even if the source is only one local MP3 or WAV.
+  - This keeps user-demo wording and later longform reuse inside the same memory structure as web-backed research.
+- Long local transcription jobs should preserve four output layers by default.
+  - `timestamped.md` for chapter routing and quotation.
+  - `plain.txt` for fast reading and search.
+  - `raw-asr.txt` for pre-normalization inspection.
+  - `segments.json` for later re-slicing or targeted QA without rerunning the full job.
+- Local ASR provenance belongs in the readiness layer, not only in the command history.
+  - Record engine, model, device, compute type, thread count, language, VAD state, hotword use, and text-normalization choice in `tool-readiness.md`.
+  - This is the only reliable way to compare transcript quality across future local-demo runs.
+- Large local transcription jobs should keep an explicit progress log.
+  - A saved `transcription-progress.log` with elapsed minutes, segment counts, and audio progress is useful for runtime estimation and failure diagnosis.
+  - Silent one-shot transcripts are weaker because later agents cannot tell whether the job stalled, restarted, or only partially completed.
+- Large original media does not always need to be copied into the reusable run package.
+  - Keep the original source path in `sources.md` and `PACKAGE-MANIFEST.md`.
+  - Keep small `source-originals/sample-*.wav` spot-check slices for VAD/quality review.
+  - Only bundle the full raw media when later research or audit actually requires it.
+
+### Failed or lower-value patterns reinforced by this pass
+
+- Do not save only a cleaned final transcript from a long local recording and throw away the raw ASR / segment structure.
+- Do not treat local-demo transcription as reusable evidence if the ASR settings are undocumented.
+- Do not bloat every run package with the full original recording when lighter QA slices plus the original path are enough.
+- Do not leave local user-demo transcripts outside the run-memory tree where later guide research cannot discover them.
+
+### Gap note
+
+- This pass did not add a new opencli, multilingual discovery, or forum-capture method; the durable new method was local-ASR packaging and auditability only.
+- Shorts-specific method memory still has no newer evidence family after the 2026-06-23 pass.
+
+## 2026-06-25 Maintenance Pass
+
+### Reusable methods confirmed from the Dave Jungle traffic-evidence run
+
+- A compact `traffic-evidence` pack is acceptable when the user asks for topic-choice proof instead of a full deep-dive guide package.
+  - Keep the evidence chain formal even in the smaller shape: `query-log-reviewed.md`, `sources.md`, `claim-map.md`, `source-capture-status.md`, `decision-log.md`, `PACKAGE-MANIFEST.md`, and a report.
+  - This is the correct fix when a spoken recommendation or thin comparison note would violate the repo's research-pack rules.
+- Topic-ranking work should split `candidate metadata` from `validated read evidence` more aggressively than normal deep research.
+  - Keep raw search artifacts in `sources-candidates-opencli.md`.
+  - If useful, derive a helper like `candidate-metrics.csv` for cross-bucket comparison.
+  - Do not move a source into `sources.md` until exact video metadata, comments, transcript text, or readable body text has been checked.
+- For Bilibili traffic evidence, `bilibili search` is discovery and `bilibili video` is validation.
+  - Search `score` can surface good candidates quickly.
+  - Exact views, replies, likes, and favorites from `opencli.cmd bilibili video` are the stronger comparison layer for final ranking.
+  - Comment capture then decides whether the topic also has practical player-problem evidence.
+- `web read` can be usable even when the wrapper returns exit code `1`.
+  - If the saved markdown body is readable and matches the intended page, keep the source as usable-with-wrapper-caveat.
+  - Record the caveat in `source-capture-status.md` and `PACKAGE-MANIFEST.md` so later agents do not misclassify it as a full failure.
+- Treat `tool-readiness.md` as a three-layer artifact: top summary, raw command blocks, and trailing notes.
+  - If those layers conflict, trust the newest raw `opencli doctor` blocks and direct smoke results.
+  - A stale final note such as `Browser Bridge is still unavailable` is lower weight than repeated later `[OK] Connectivity` evidence.
+
+### Failed or lower-value patterns reinforced by this pass
+
+- Do not keep a quick topic-decision run as raw platform JSON only if the result may need later reuse.
+- Do not collapse candidate traffic signals and validated claim-bearing text into one evidence tier.
+- Do not treat Bilibili search `score` as exact traffic proof when exact video metadata was not captured.
+- Do not auto-fail readable `web read` outputs purely because the process exit code was non-zero.
+- Do not quote the final prose note in `tool-readiness.md` without checking whether later doctor blocks contradict it.
+
+### Gap note
+
+- `workspace/memory/runs/20260625-001332-topic-decision-elliot-vs-dave/` is still a gap example, not a reusable model, because it lacks reviewed logs and a decision layer.
+- This pass did not add a new Reddit / Steam / Bahamut deep-read breakthrough; the strongest new evidence is packaging discipline for compact traffic-evidence work.
+- Shorts-specific method memory still did not advance in this pass.
